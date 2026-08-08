@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+        <key>REPO</key>
+        <string>/Users/USER/code/trade-data</string>
+        <key>GIT_REPO</key>
+        <string>/Users/USER/code/trade</string>
+    </dict>
+    <key>Label</key>
+    <string>com.trade.schedule-monitor</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/USER/code/trade-data/scripts/schedule_monitor.sh</string>
+    </array>
+    <key>RunAtLoad</key>
+    <false/>
+    <key>StandardErrorPath</key>
+    <string>/Users/USER/code/trade-data/data/logs/schedule_monitor_launchd.err</string>
+    <key>StandardOutPath</key>
+    <string>/Users/USER/code/trade-data/data/logs/schedule_monitor_launchd.log</string>
+    <!-- 每15分钟跑：Minute 数组，每小时 0/15/30/45 分触发 -->
+    <key>StartCalendarInterval</key>
+    <array>
+        <dict>
+            <key>Minute</key>
+            <integer>0</integer>
+        </dict>
+        <dict>
+            <key>Minute</key>
+            <integer>15</integer>
+        </dict>
+        <dict>
+            <key>Minute</key>
+            <integer>30</integer>
+        </dict>
+        <dict>
+            <key>Minute</key>
+            <integer>45</integer>
+        </dict>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/Users/USER/code/trade-data</string>
+    <!-- 超时 600s：检查 8 任务日志 + 发邮件，给足上限防僵死。 -->
+    <key>ExitTimeOut</key>
+    <integer>600</integer>
+</dict>
+</plist>

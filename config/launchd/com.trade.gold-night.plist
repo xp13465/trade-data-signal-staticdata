@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.trade.gold-night</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/USER/code/trade-data/scripts/gold_night.sh</string>
+    </array>
+    <!-- 02:40 触发: 02:30 沪金/INE原油夜盘收盘后 10min 裕量, 价格已定格(调研验证 02:36/38/40 三次一致).
+         §14 安全窗口确认: backfill-evening 02:00-02:17 已结束(ExitTimeOut 到04:00, 但内部 deploy 02:17前完成);
+         pf-score-weekly 03:17 周日才跑(工作日不撞); us-stock-morning 05:00(后1h20m); intraday 09:25-20:35(后6h45m).
+         闸门 is_trading_day(昨日): 昨晚有夜盘才跑. 周二-周六02:40跑, 周日/周一凌晨跳过(周日晚无夜盘).
+         周六02:40 采周五夜盘(属下周一交易日, 写 date=周六 自然日, 非交易日 intraday 跳过值保留). -->
+    <key>StartCalendarInterval</key>
+    <array>
+        <dict>
+            <key>Hour</key>
+            <integer>2</integer>
+            <key>Minute</key>
+            <integer>40</integer>
+        </dict>
+    </array>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+        <key>REPO</key>
+        <string>/Users/USER/code/trade-data</string>
+        <key>GIT_REPO</key>
+        <string>/Users/USER/code/trade</string>
+    </dict>
+    <key>WorkingDirectory</key>
+    <string>/Users/USER/code/trade-data</string>
+    <key>StandardOutPath</key>
+    <string>/Users/USER/code/trade-data/data/logs/gold_night_launchd.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/USER/code/trade-data/data/logs/gold_night_launchd.err</string>
+    <key>RunAtLoad</key>
+    <false/>
+    <!-- 超时 600s: 采集(几秒) + export global 6 range(~10-30s) + R2 上传(1-2min) + git push(几秒), 给 launchd 合理上限防僵死. -->
+    <key>ExitTimeOut</key>
+    <integer>600</integer>
+</dict>
+</plist>

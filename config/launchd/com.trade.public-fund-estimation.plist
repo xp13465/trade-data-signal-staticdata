@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.trade.public-fund-estimation</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/USER/code/trade-data/scripts/public_fund_estimation.sh</string>
+    </array>
+    <!-- 盘中实时估算采集: 10:00/11:00/13:30/14:30 四档。
+         fund_value_estimation_em 盘中(09:30-15:00)返回全市场基金当日实时估算净值/涨跌,
+         盘后/非交易日返回 None。避开 09:30 开盘波动 + 15:00 收盘(估算可能已无)。
+         只采 fund_estimation_nav 表, 不跑 export/deploy(盘中避免撞 intraday-snapshot)。 -->
+    <key>StartCalendarInterval</key>
+    <array>
+        <dict>
+            <key>Hour</key>
+            <integer>10</integer>
+            <key>Minute</key>
+            <integer>0</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>11</integer>
+            <key>Minute</key>
+            <integer>0</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>13</integer>
+            <key>Minute</key>
+            <integer>30</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>14</integer>
+            <key>Minute</key>
+            <integer>30</integer>
+        </dict>
+    </array>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+        <key>REPO</key>
+        <string>/Users/USER/code/trade-data</string>
+        <key>GIT_REPO</key>
+        <string>/Users/USER/code/trade</string>
+    </dict>
+    <key>WorkingDirectory</key>
+    <string>/Users/USER/code/trade-data</string>
+    <key>StandardOutPath</key>
+    <string>/Users/USER/code/trade-data/data/logs/public_fund_estimation_launchd.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/USER/code/trade-data/data/logs/public_fund_estimation_launchd.err</string>
+    <key>RunAtLoad</key>
+    <false/>
+    <!-- 超时 120s：fetch_estimation ~5s + 交易日判断 + 锁排队。 -->
+    <key>ExitTimeOut</key>
+    <integer>120</integer>
+</dict>
+</plist>

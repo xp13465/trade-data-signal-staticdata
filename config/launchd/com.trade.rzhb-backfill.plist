@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.trade.rzhb-backfill</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/USER/code/trade-data/scripts/rzhb_backfill.sh</string>
+    </array>
+    <!-- 每日两时点跑：08:00 主采 + 19:15 兜底，防 SSE 源延迟/网络抖动/电池休眠漏跑。
+         两融余额（a_fund_margin，沪市融资余额）源 stock_margin_sse 是 SSE 官方 T+1 早晨发布 T 日数据
+         （非原误判的"盘后 18:00-19:00 发布"，2026-07-29 调研铁证：7-27/7-28 19:15 连续采不到 T 日，
+         7-29 07:59 akshare 才有 7-28）。
+         - 08:00 主采：T+1 早晨（开盘前 09:30 的 1.5h 前）SSE 已发布 -> 采到则当日上线；
+         - 19:15 兜底：17:48 pmset 唤醒后跑，防 08:00 源延迟/网络抖动/电池休眠漏跑（2026-07-29 08:00 一次性漏跑教训：
+           plist 08:08 改晚于 08:00 时点，launchd 不补跑已过时点）。
+         脚本交易日闸门 + 进程互斥锁 + collect_series 幂等 upsert，重复跑安全（memory backup-strategy-redundant-runs）。
+         独立于 backfill_evening 的 SERIES_FUNCS 兜底；采集几秒 + compute + 持 deploy 锁推送。 -->
+    <key>StartCalendarInterval</key>
+    <array>
+        <dict>
+            <key>Hour</key>
+            <integer>8</integer>
+            <key>Minute</key>
+            <integer>0</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>19</integer>
+            <key>Minute</key>
+            <integer>15</integer>
+        </dict>
+    </array>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+        <key>REPO</key>
+        <string>/Users/USER/code/trade-data</string>
+        <key>GIT_REPO</key>
+        <string>/Users/USER/code/trade</string>
+    </dict>
+    <key>WorkingDirectory</key>
+    <string>/Users/USER/code/trade-data</string>
+    <key>StandardOutPath</key>
+    <string>/Users/USER/code/trade-data/data/logs/rzhb_backfill_launchd.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/USER/code/trade-data/data/logs/rzhb_backfill_launchd.err</string>
+    <key>RunAtLoad</key>
+    <false/>
+    <!-- 超时 3600s：deploy.lock 可能排队等晚跑任务，给足等待。 -->
+    <key>ExitTimeOut</key>
+    <integer>3600</integer>
+</dict>
+</plist>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+        <key>REPO</key>
+        <string>/Users/USER/code/trade-data</string>
+        <key>GIT_REPO</key>
+        <string>/Users/USER/code/trade</string>
+    </dict>
+    <key>Label</key>
+    <string>com.trade.self-heal</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/USER/code/trade-data/scripts/self_heal.sh</string>
+    </array>
+    <key>RunAtLoad</key>
+    <false/>
+    <key>StandardErrorPath</key>
+    <string>/Users/USER/code/trade-data/data/logs/self_heal_launchd.err</string>
+    <key>StandardOutPath</key>
+    <string>/Users/USER/code/trade-data/data/logs/self_heal_launchd.log</string>
+    <!-- 每15分钟跑：Minute=7/22/37/52，错开 schedule_monitor 的 0/15/30/45，
+         让 monitor 先告警 self_heal 后自愈，避免撞 deploy.lock。 -->
+    <key>StartCalendarInterval</key>
+    <array>
+        <dict>
+            <key>Minute</key>
+            <integer>7</integer>
+        </dict>
+        <dict>
+            <key>Minute</key>
+            <integer>22</integer>
+        </dict>
+        <dict>
+            <key>Minute</key>
+            <integer>37</integer>
+        </dict>
+        <dict>
+            <key>Minute</key>
+            <integer>52</integer>
+        </dict>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/Users/USER/code/trade-data</string>
+    <!-- 超时 1800s：决策 + 触发后台重跑（不等重跑完成），30min 上限防僵死。 -->
+    <key>ExitTimeOut</key>
+    <integer>1800</integer>
+</dict>
+</plist>

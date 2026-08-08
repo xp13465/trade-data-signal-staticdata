@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>PATH</key>
+		<string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+		<key>REPO</key>
+		<string>/Users/USER/code/trade-data</string>
+	</dict>
+	<key>Label</key>
+	<string>com.trade.lab-auto</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/bin/bash</string>
+		<string>/Users/USER/code/trade-data/scripts/update_lab.sh</string>
+	</array>
+	<key>RunAtLoad</key>
+	<false/>
+	<key>StandardErrorPath</key>
+	<string>/Users/USER/code/trade-data/data/logs/update_lab_launchd.err</string>
+	<key>StandardOutPath</key>
+	<string>/Users/USER/code/trade-data/data/logs/update_lab_launchd.log</string>
+	<key>StartCalendarInterval</key>
+	<dict>
+		<key>Hour</key>
+		<integer>19</integer>
+		<key>Minute</key>
+		<integer>0</integer>
+	</dict>
+	<key>WorkingDirectory</key>
+	<string>/Users/USER/code/trade-data</string>
+	<!-- 超时 7200s：lab_simulate(单信号+融合)+lab_retest 全量回测，给足上限防僵死。
+	     update_all(17:50)约49min完成，19:00启动后脚本内会等待 update_all 完成。 -->
+	<key>ExitTimeOut</key>
+	<integer>7200</integer>
+</dict>
+</plist>

@@ -1,0 +1,25 @@
+# staticdata 备份仓库 .gitignore
+# 灾备4层: trade git(代码) / staticdata(差异日志) / R2私有桶(DB gz) / R2公开桶(大文件分发)
+#
+# 排除大文件(只走R2公开桶):
+index-*
+industry-*
+lab-*
+trade_sim_*[0-9]*
+
+# 排除压缩文件(git 无法 diff 二进制 gz):
+*.gz
+
+# 排除非数据文件:
+feed.xml
+
+# DB 文件: 3个DB均>100MB(sentiment 120MB/etf_nt 171MB/public_fund 2.1GB),
+# 超 GitHub 100MB 文件限制,需 git-lfs 才能推送。
+# 当前 git-lfs 未安装,DB 不进 git(由 R2 私有桶 gz 快照备份,灾备第3层)。
+# DB 仍 rsync 到 staticdata/db/ 作本地备份(deploy.sh 每次 deploy 后刷新)。
+# 安装 git-lfs 后:删除下行 + 在 .gitattributes 加 "db/*.db filter=lfs diff=lfs merge=lfs -text"
+db/*.db
+
+# 保留:
+# config/*     (配置: .env.example/wrangler.jsonc/launchd plist模板)
+# data/*.json  (小JSON差异化日志)

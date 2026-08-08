@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>PATH</key>
+		<string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+		<key>REPO</key>
+		<string>/Users/USER/code/trade-data</string>
+		<key>GIT_REPO</key>
+		<string>/Users/USER/code/trade</string>
+	</dict>
+	<key>Label</key>
+	<string>com.trade.etf-national-team</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/bin/bash</string>
+		<string>/Users/USER/code/trade-data/scripts/etf_national_team_backfill.sh</string>
+	</array>
+	<key>RunAtLoad</key>
+	<false/>
+	<!-- 每日 20:07(主槽) + 21:30(兜底槽) 跑：SSE/SZSE ETF 每日份额为 T+1 发布，实测 22:06 仍无当日数据（源端常深夜或次日才出）。
+	     采集器内置 6 天回填窗口，当日份额滞后时靠次日跑补上。
+	     21:30 兜底槽（防 20:07 失败/数据延迟，幂等重采不污染；2026-07-24 加回：
+	     B4 后单次 1.2min 但 20:07 deploy 失败证明兜底仍有价值）。
+	     经 etf_national_team_backfill.sh 包装：采集 + 持 deploy 锁推送（export+git push），当日采集当日上线。 -->
+	<key>StartCalendarInterval</key>
+	<array>
+		<dict>
+			<key>Hour</key>
+			<integer>20</integer>
+			<key>Minute</key>
+			<integer>7</integer>
+		</dict>
+		<dict>
+			<key>Hour</key>
+			<integer>21</integer>
+			<key>Minute</key>
+			<integer>30</integer>
+		</dict>
+	</array>
+	<key>StandardErrorPath</key>
+	<string>/Users/USER/code/trade-data/data/logs/etf_national_team_launchd.err</string>
+	<key>StandardOutPath</key>
+	<string>/Users/USER/code/trade-data/data/logs/etf_national_team_launchd.log</string>
+	<key>WorkingDirectory</key>
+	<string>/Users/USER/code/trade-data</string>
+	<!-- 超时 3600s：ETF 采集 + deploy.sh 推送（export+git push），与其他 backfill 一致。 -->
+	<key>ExitTimeOut</key>
+	<integer>3600</integer>
+</dict>
+</plist>

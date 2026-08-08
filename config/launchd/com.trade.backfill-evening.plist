@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.trade.backfill-evening</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/USER/code/trade-data/scripts/backfill_metrics.sh</string>
+    </array>
+    <key>StartCalendarInterval</key>
+    <array>
+      <dict>
+        <key>Hour</key>
+        <integer>16</integer>
+        <key>Minute</key>
+        <integer>35</integer>
+      </dict>
+      <dict>
+        <key>Hour</key>
+        <integer>21</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+      </dict>
+      <dict>
+        <key>Hour</key>
+        <integer>2</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+      </dict>
+    </array>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+        <key>REPO</key>
+        <string>/Users/USER/code/trade-data</string>
+        <key>GIT_REPO</key>
+        <string>/Users/USER/code/trade</string>
+    </dict>
+    <key>WorkingDirectory</key>
+    <string>/Users/USER/code/trade-data</string>
+    <key>StandardOutPath</key>
+    <string>/Users/USER/code/trade-data/data/logs/backfill_evening_launchd.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/USER/code/trade-data/data/logs/backfill_evening_launchd.err</string>
+    <key>RunAtLoad</key>
+    <false/>
+    <!-- 超时 7200s：02:00 槽位补采序列指标 + 持 deploy 锁推送，deploy.lock 可能排队，给足等待。
+         2026-07-24 B4 Top2 去重：删 20:00 槽（晚间兜底冗余，16:35 已采当日 + 20:07 独立 etf 采 ETF，
+         省 ~56min/天）。保留 16:35（收盘后首采）+ 02:00（补昨日）。
+         2026-07-29 加 21:00 槽：中证红利（csi_div/div_lowvol，源 stock_zh_index_hist_csindex）
+         T 日晚 16:35 后发布，21:00 大概率已出（原仅 02:00 兜底，21:00 提前 5h 展示当日值）。 -->
+    <key>ExitTimeOut</key>
+    <integer>7200</integer>
+</dict>
+</plist>

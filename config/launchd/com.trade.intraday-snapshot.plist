@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.trade.intraday-snapshot</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/USER/code/trade-data/scripts/intraday_snapshot.sh</string>
+    </array>
+    <!-- 盘中每 10 分钟一次实时快照（A 股 9:30-11:30 / 13:00-15:00）
+         9:25 竞价完成首次（开盘价已定，腾讯实时源返开盘价，用户 9:25 即可看竞价涨跌，无需等到 9:35）。
+         上午 14 次（9:25/9:35/9:45/9:55/10:05/10:15/10:25/10:35/10:45/10:55/11:05/11:15/11:25/11:32）
+         下午 14 次（13:01/13:05/13:15/13:25/13:35/13:45/13:55/14:05/14:15/14:25/14:35/14:45/14:55/15:02）共 28 次。
+         盘中主体严格 10m 间隔，避开 :00/:30 整点（不撞 schedule_monitor/盘后任务）。
+         11:25 为午休前最后盘中动态（11:30 午休前 5min 近收盘）。
+         11:32 为上午收盘收尾快照（11:30 收盘后 2min，午休期实时源返最后成交价=11:30 收盘价，
+         拿上午最终收盘值刷新角标，避免卡 11:25 一个多小时到 13:05 才更新）。
+         13:01 为下午开盘后 1min 首采（13:00 开盘后 1min，修复 11:32->13:05 空档 33min 致前端
+         is_closed=false 感知滞后到 13:05+2min=13:07；13:01 采后 13:02 push，前端 13:02:15 感知开盘，
+         最坏 2min，原 7min）。13:05 仍保留覆盖 13:01 数据（幂等，10m 节奏起点对齐 13:05/13:15/...）。
+         15:02 为下午收盘收尾快照（15:00 收盘后 2min，拿当日最终收盘值；14:55 盘中仍开拿不到最终收盘值）。
+         收尾时点 11:32/15:02 打破 10m 节奏（11:25->11:32=7m，14:55->15:02=7m），收盘后 2min 早拿，P0 关键。
+         2026-07-28 从 15m(19次) 升级到 10m(26次)，盘中早 5min 看数据。执行 28.5-122s << 10m(600s)。
+         2026-07-29 加 11:32 上午收盘收尾 + 15:05->15:02 下午收盘收尾改 2min（26次->27次），修复午休角标卡 11:25。
+         2026-07-28 20:35 加 15:35+20:35 两个收盘后时点（修复 ETF 国家队预估消失 bug）：
+           7/24 commit 3a628e5c 删了 15:35 intraday-close slot + 加盘中<1500跳过闸门，后果 15:05 跑时
+           sina 未发当天 ETF close（sina 延迟到 20:07-21:30，mootdx 7/17 起返空）-> ohlc=0 跳过 ->
+           不追加今天行 -> -1m.json 末日停在昨天且份额已发 -> 前端 lastChgMissing=false -> 预估从不触发。
+           修复：15:35(原设计恢复,兜底)+20:35(sina 20:29 已发 close 保底) 两时点跑 intraday-close，
+           闸门 HOUR_MIN>=1500 已覆盖（无需改脚本），追加今天行(close 有 + share_change=null) -> 预估触发。
+         非交易日由脚本内 is_trading_day 闸门跳过（force 可绕过）。 -->
+    <key>StartCalendarInterval</key>
+    <array>
+        <dict>
+            <key>Hour</key>
+            <integer>9</integer>
+            <key>Minute</key>
+            <integer>25</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>9</integer>
+            <key>Minute</key>
+            <integer>35</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>9</integer>
+            <key>Minute</key>
+            <integer>45</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>9</integer>
+            <key>Minute</key>
+            <integer>55</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>10</integer>
+            <key>Minute</key>
+            <integer>5</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>10</integer>
+            <key>Minute</key>
+            <integer>15</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>10</integer>
+            <key>Minute</key>
+            <integer>25</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>10</integer>
+            <key>Minute</key>
+            <integer>35</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>10</integer>
+            <key>Minute</key>
+            <integer>45</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>10</integer>
+            <key>Minute</key>
+            <integer>55</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>11</integer>
+            <key>Minute</key>
+            <integer>5</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>11</integer>
+            <key>Minute</key>
+            <integer>15</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>11</integer>
+            <key>Minute</key>
+            <integer>25</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>11</integer>
+            <key>Minute</key>
+            <integer>32</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>13</integer>
+            <key>Minute</key>
+            <integer>1</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>13</integer>
+            <key>Minute</key>
+            <integer>5</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>13</integer>
+            <key>Minute</key>
+            <integer>15</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>13</integer>
+            <key>Minute</key>
+            <integer>25</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>13</integer>
+            <key>Minute</key>
+            <integer>35</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>13</integer>
+            <key>Minute</key>
+            <integer>45</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>13</integer>
+            <key>Minute</key>
+            <integer>55</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>14</integer>
+            <key>Minute</key>
+            <integer>5</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>14</integer>
+            <key>Minute</key>
+            <integer>15</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>14</integer>
+            <key>Minute</key>
+            <integer>25</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>14</integer>
+            <key>Minute</key>
+            <integer>35</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>14</integer>
+            <key>Minute</key>
+            <integer>45</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>14</integer>
+            <key>Minute</key>
+            <integer>55</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>15</integer>
+            <key>Minute</key>
+            <integer>2</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>15</integer>
+            <key>Minute</key>
+            <integer>35</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>20</integer>
+            <key>Minute</key>
+            <integer>35</integer>
+        </dict>
+    </array>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+        <key>REPO</key>
+        <string>/Users/USER/code/trade-data</string>
+        <key>GIT_REPO</key>
+        <string>/Users/USER/code/trade</string>
+    </dict>
+    <key>WorkingDirectory</key>
+    <string>/Users/USER/code/trade-data</string>
+    <key>StandardOutPath</key>
+    <string>/Users/USER/code/trade-data/data/logs/intraday_snapshot_launchd.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/USER/code/trade-data/data/logs/intraday_snapshot_launchd.err</string>
+    <key>RunAtLoad</key>
+    <false/>
+    <!-- 超时 1800s：盘中轻量快照（几秒采集+持deploy锁推送），给 launchd 合理上限防僵死。 -->
+    <key>ExitTimeOut</key>
+    <integer>1800</integer>
+</dict>
+</plist>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.trade.etf-track-index</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/Users/USER/code/trade-data/.venv/bin/python</string>
+		<string>/Users/USER/code/trade-data/scripts/fetch_etf_track_index.py</string>
+	</array>
+	<!-- 周日 03:30 触发: 增量刷新 ETF track_index（跟踪标的），新上市 ETF 的 track_index 入缓存。
+	     §14 安全窗口确认: pf-score-weekly 03:17(写 public_fund.db,不同资源不撞); backfill-evening 02:00(02:17完);
+	     us-stock-morning 05:00(后1h30m); intraday 09:25+(后6h). 03:30 无推main/DB/collector冲突。
+	     track_index（跟踪标的）ETF 上市后基本不变，周更足够；增量更新只抓新增/缺失（~3s），不全量重抓。
+	     build_board_etf_map.py 读此文件做 track_index_name 精准匹配，失败走名称兜底。
+	     ROOT=trade-data（via symlink path），写 trade-data/data/etf_track_index.json，deploy.sh rsync 到 trade/。 -->
+	<key>StartCalendarInterval</key>
+	<dict>
+		<key>Weekday</key>
+		<integer>0</integer>
+		<key>Hour</key>
+		<integer>3</integer>
+		<key>Minute</key>
+		<integer>30</integer>
+	</dict>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>PATH</key>
+		<string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+		<key>REPO</key>
+		<string>/Users/USER/code/trade-data</string>
+		<key>GIT_REPO</key>
+		<string>/Users/USER/code/trade</string>
+	</dict>
+	<key>WorkingDirectory</key>
+	<string>/Users/USER/code/trade-data</string>
+	<key>StandardOutPath</key>
+	<string>/Users/USER/code/trade-data/data/logs/etf-track-index-launchd.log</string>
+	<key>StandardErrorPath</key>
+	<string>/Users/USER/code/trade-data/data/logs/etf-track-index-launchd.err</string>
+	<key>RunAtLoad</key>
+	<false/>
+	<!-- 超时 1800s: 增量模式下 ~3s（仅新ETF）；--force 全量 ~5min。给 launchd 合理上限防僵死。 -->
+	<key>ExitTimeOut</key>
+	<integer>1800</integer>
+</dict>
+</plist>

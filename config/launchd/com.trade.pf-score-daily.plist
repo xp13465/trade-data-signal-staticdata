@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>GIT_REPO</key>
+		<string>/Users/USER/code/trade</string>
+		<key>PATH</key>
+		<string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+		<key>REPO</key>
+		<string>/Users/USER/code/trade-data</string>
+	</dict>
+	<key>ExitTimeOut</key>
+	<integer>1800</integer>
+	<key>Label</key>
+	<string>com.trade.pf-score-daily</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/bin/bash</string>
+		<string>/Users/USER/code/trade-data/scripts/pf_score_daily.sh</string>
+	</array>
+	<key>RunAtLoad</key>
+	<false/>
+	<key>StandardErrorPath</key>
+	<string>/Users/USER/code/trade-data/data/logs/pf-score-daily-launchd.log</string>
+	<key>StandardOutPath</key>
+	<string>/Users/USER/code/trade-data/data/logs/pf-score-daily-launchd.log</string>
+	<key>StartCalendarInterval</key>
+	<dict>
+		<key>Hour</key>
+		<integer>16</integer>
+		<key>Minute</key>
+		<integer>0</integer>
+	</dict>
+	<key>WorkingDirectory</key>
+	<string>/Users/USER/code/trade-data</string>
+</dict>
+</plist>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.trade.public-fund-daily</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/USER/code/trade-data/scripts/public_fund_daily.sh</string>
+    </array>
+    <!-- 日更净值: 每交易日 16:30(主槽) + 17:00(兜槽)。
+         akshare fund_open_fund_daily_em 约 16:00-17:00 发布当日净值，16:30 采可能部分，
+         17:00 兜槽补完整。轻量 8s，幂等覆盖重采。
+         收盘后跑（15:30 收盘后 1h），不撞盘中 intraday_snapshot。 -->
+    <key>StartCalendarInterval</key>
+    <array>
+        <dict>
+            <key>Hour</key>
+            <integer>16</integer>
+            <key>Minute</key>
+            <integer>30</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>17</integer>
+            <key>Minute</key>
+            <integer>0</integer>
+        </dict>
+    </array>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+        <key>REPO</key>
+        <string>/Users/USER/code/trade-data</string>
+        <key>GIT_REPO</key>
+        <string>/Users/USER/code/trade</string>
+    </dict>
+    <key>WorkingDirectory</key>
+    <string>/Users/USER/code/trade-data</string>
+    <key>StandardOutPath</key>
+    <string>/Users/USER/code/trade-data/data/logs/public_fund_daily_launchd.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/USER/code/trade-data/data/logs/public_fund_daily_launchd.err</string>
+    <key>RunAtLoad</key>
+    <false/>
+    <!-- 超时 300s：daily ~8s + export + deploy 推送（deploy.lock 可能排队）。 -->
+    <key>ExitTimeOut</key>
+    <integer>300</integer>
+</dict>
+</plist>
