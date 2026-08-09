@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+        <key>REPO</key>
+        <string>/Users/USER/code/trade-data</string>
+        <key>GIT_REPO</key>
+        <string>/Users/USER/code/trade</string>
+    </dict>
+    <key>Label</key>
+    <string>com.trade.monitor-72h</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/USER/code/trade-data/scripts/monitor_72h.sh</string>
+    </array>
+    <key>RunAtLoad</key>
+    <false/>
+    <key>StandardErrorPath</key>
+    <string>/Users/USER/code/trade-data/data/logs/monitor_72h_launchd.err</string>
+    <key>StandardOutPath</key>
+    <string>/Users/USER/code/trade-data/data/logs/monitor_72h_launchd.log</string>
+    <!-- 每30分钟跑：Minute 10/40，与 schedule_monitor(0/15/30/45) + self_heal(7/22/37/52) 错开 -->
+    <key>StartCalendarInterval</key>
+    <array>
+        <dict>
+            <key>Minute</key>
+            <integer>10</integer>
+        </dict>
+        <dict>
+            <key>Minute</key>
+            <integer>40</integer>
+        </dict>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/Users/USER/code/trade-data</string>
+    <!-- 超时 300s：curl 多个 URL + 解析，给足上限防僵死 -->
+    <key>ExitTimeOut</key>
+    <integer>300</integer>
+</dict>
+</plist>
