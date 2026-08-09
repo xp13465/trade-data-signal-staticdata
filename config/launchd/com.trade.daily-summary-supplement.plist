@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+        <key>REPO</key>
+        <string>/Users/USER/code/trade-data</string>
+        <key>GIT_REPO</key>
+        <string>/Users/USER/code/trade</string>
+    </dict>
+    <key>Label</key>
+    <string>com.trade.daily-summary-supplement</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/USER/code/trade-data/.venv/bin/python</string>
+        <string>/Users/USER/code/trade-data/scripts/daily_summary_email.py</string>
+        <string>--mode</string>
+        <string>supplement</string>
+    </array>
+    <key>RunAtLoad</key>
+    <false/>
+    <!-- 每日 20:30 跑：T日补充速递邮件（期货风向/汪汪队/公募基金）。
+         20:05 期货 backfill + 20:07 ETF backfill 已完成 export+deploy，数据就绪。
+         20:35 intraday-snapshot 推 main（错开 5 分钟不冲突，本任务只读 JSON+发邮件不推 git）。
+         脚本内置交易日闸门（is_trading_day），非交易日优雅跳过。 -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>20</integer>
+        <key>Minute</key>
+        <integer>30</integer>
+    </dict>
+    <key>StandardErrorPath</key>
+    <string>/Users/USER/code/trade-data/data/logs/daily_summary_supplement_launchd.err</string>
+    <key>StandardOutPath</key>
+    <string>/Users/USER/code/trade-data/data/logs/daily_summary_supplement_launchd.log</string>
+    <key>WorkingDirectory</key>
+    <string>/Users/USER/code/trade-data</string>
+    <!-- 超时 600s：读 JSON + SMTP 发邮件，给足上限防僵死。 -->
+    <key>ExitTimeOut</key>
+    <integer>600</integer>
+</dict>
+</plist>
