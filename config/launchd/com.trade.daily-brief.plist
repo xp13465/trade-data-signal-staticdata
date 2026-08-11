@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+        <key>REPO</key>
+        <string>/Users/USER/code/trade-data</string>
+        <key>GIT_REPO</key>
+        <string>/Users/USER/code/trade</string>
+    </dict>
+    <key>Label</key>
+    <string>com.trade.daily-brief</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/USER/code/trade-data/scripts/run_daily_brief.sh</string>
+    </array>
+    <key>RunAtLoad</key>
+    <false/>
+    <!-- 每日 20:40 跑：AI 预测(daily_brief)盘后生成。
+         20:35 intraday-snapshot 盘后快照 + 20:05/20:07 期货/ETF backfill 已完成，数据就绪。
+         20:40 错开 20:35 五分钟避撞车；本任务只写 daily_brief JSON + R2 上传 + staticdata 同步，不推 main。
+         run_daily_brief.sh 读 config/daily_brief.yaml schedule_enabled：
+         true=自动跑;false=拦截跳过。失败不阻塞（内部降级规则版/minimal，退出码恒 0）。 -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>20</integer>
+        <key>Minute</key>
+        <integer>40</integer>
+    </dict>
+    <key>StandardErrorPath</key>
+    <string>/Users/USER/code/trade-data/data/logs/daily_brief_launchd.err</string>
+    <key>StandardOutPath</key>
+    <string>/Users/USER/code/trade-data/data/logs/daily_brief_launchd.log</string>
+    <key>WorkingDirectory</key>
+    <string>/Users/USER/code/trade-data</string>
+    <!-- 超时 900s：单 prompt/多角色 AI 调用 + R2 上传 + staticdata 同步，给足上限防僵死。 -->
+    <key>ExitTimeOut</key>
+    <integer>900</integer>
+</dict>
+</plist>
