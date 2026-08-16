@@ -13,7 +13,7 @@ trade_sim_*[0-9]*
 # 排除非数据文件:
 feed.xml
 
-# DB 文件: 3个DB均>100MB(sentiment 120MB/etf_nt 171MB/public_fund 2.1GB),
+# DB 文件: 4个DB均>100MB(sentiment 122MB/etf_nt 172MB/public_fund 2.1GB/stock_daily 51MB),
 # 超 GitHub 100MB 文件限制,需 git-lfs 才能推送。
 # 当前 git-lfs 未安装,DB 不进 git(由 R2 私有桶 gz 快照备份,灾备第3层)。
 # DB 仍 rsync 到 staticdata/db/ 作本地备份(deploy.sh 每次 deploy 后刷新)。
