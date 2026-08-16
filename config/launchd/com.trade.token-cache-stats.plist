@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+        <key>GIT_REPO</key>
+        <string>/Users/USER/code/trade</string>
+    </dict>
+    <key>Label</key>
+    <string>com.trade.token-cache-stats</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/env</string>
+        <string>python3</string>
+        <string>/Users/USER/code/trade/scripts/token_cache_stats.py</string>
+        <string>--append-daily</string>
+    </array>
+    <key>RunAtLoad</key>
+    <false/>
+    <!-- 每日 23:30 追加当天 token 缓存命中率走势(claude 版本 + 当日 CLAUDE.md commit 改动)。
+         23:30 在安全窗口 23:00 之后无推 main/评分/采集任务,不冲突。
+         本任务只读 ~/.claude/projects JSONL + 幂等更新 claude-work-mode/README.md 走势表,不推 git。
+         当天会话截至 23:30,追加的是"截至 23:30 当天数据"(README 表头已标注)。 -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>23</integer>
+        <key>Minute</key>
+        <integer>30</integer>
+    </dict>
+    <key>StandardErrorPath</key>
+    <string>/Users/USER/code/trade-data/data/logs/token_cache_stats_launchd.err</string>
+    <key>StandardOutPath</key>
+    <string>/Users/USER/code/trade-data/data/logs/token_cache_stats_launchd.log</string>
+    <key>WorkingDirectory</key>
+    <string>/Users/USER/code/trade</string>
+    <!-- 超时 120s：扫当天 JSONL + git log + 写 README,纯 stdlib 快。 -->
+    <key>ExitTimeOut</key>
+    <integer>120</integer>
+</dict>
+</plist>
