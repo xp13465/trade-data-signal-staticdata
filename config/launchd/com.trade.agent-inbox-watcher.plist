@@ -6,11 +6,12 @@
     <dict>
         <key>PATH</key>
         <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
-        <!-- launchd 环境 PATH 不含 nvm,watcher 的 os.environ.get("CODEX_BIN", "codex") 必须给绝对路径 -->
         <key>CODEX_BIN</key>
         <string>/Users/USER/.nvm/versions/node/v25.8.0/bin/codex</string>
         <key>CLAUDE_BIN</key>
         <string>/Users/USER/.nvm/versions/node/v25.8.0/bin/claude</string>
+        <key>CODEX_REVIEWER_MODEL</key>
+        <string>openrouter/free</string>
         <key>AGENT_CLAUDE_BUDGET_USD</key>
         <string>0.50</string>
         <key>AGENT_JOB_TIMEOUT_SECONDS</key>
@@ -30,6 +31,6 @@
     <key>StandardOutPath</key>
     <string>/Users/USER/code/trade-data/data/logs/agent_inbox_watcher_launchd.log</string>
     <key>StandardErrorPath</key>
-    <string>/Users/USER/code/trade-data/data/logs/agent_inbox_watcher_launchd.err</string>
+        <string>/Users/USER/code/trade-data/data/logs/agent_inbox_watcher_launchd.err</string>
 </dict>
 </plist>
