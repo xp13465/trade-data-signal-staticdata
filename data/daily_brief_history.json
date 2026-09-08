@@ -1,6 +1,80 @@
 {
  "items": [
   {
+   "date": "20260908",
+   "meta": {
+    "date": "20260908",
+    "version": "rule",
+    "direction": "flat",
+    "direction_call": null,
+    "range": {
+     "lo": -0.1,
+     "hi": 0.1
+    },
+    "index_ranges": [],
+    "sector_ranges": [],
+    "range_status": "rule_fixed",
+    "range_note": "规则版区间(非AI推导,固定窄带)",
+    "confidence": 50,
+    "confidence_reason": "规则版(非AI),无把握度评分,默认中等",
+    "watch_list": [
+     {
+      "index_id": "csi_931719",
+      "name": "中证电池主题",
+      "win_rate": 1.0
+     },
+     {
+      "index_id": "csi_932000",
+      "name": "中证2000",
+      "win_rate": 0.929
+     },
+     {
+      "index_id": "cgb_idx",
+      "name": "上证国债指数",
+      "win_rate": 0.91
+     },
+     {
+      "index_id": "sw_801880",
+      "name": "汽车",
+      "win_rate": 0.909
+     },
+     {
+      "index_id": "kospi",
+      "name": "韩国 KOSPI",
+      "win_rate": 0.9
+     }
+    ],
+    "risk_items": [
+     "HIGH预警H6均线转弱=80.4",
+     "HIGH预警H5动量衰退=61.7",
+     "LOW预警L1情绪冰点=61.3"
+    ],
+    "hit": {
+     "direction": null,
+     "actual_sh_pct": null,
+     "actual_direction": null,
+     "range_hit": null,
+     "sector_hits": null,
+     "middle_hits": null
+    },
+    "highlights": [
+     "明日方向震荡,把握度 50/100",
+     "明日重点关注 中证电池主题",
+     "留意风险: HIGH预警H6均线转弱=80.4"
+    ],
+    "tts_available": false,
+    "reflection": null
+   },
+   "text": {
+    "review": "9月8日A股偏谨慎，上证涨0.20%，多数上涨（3417涨2025跌），成交额19779亿（量能平稳）。热点：石油石化、煤炭、农林牧渔，沪深300四档状态：熊市·主跌",
+    "trend": "均线0多6空,空头排列,趋势偏弱。成交额19779亿,量能平稳。",
+    "watch": "中证电池主题(buy_special,20日胜率100%)、中证2000(buy_backup,20日胜率93%)、上证国债指数(buy_special,20日胜率91%)、汽车(buy_backup,20日胜率91%)、韩国 KOSPI(buy,20日胜率90%)",
+    "risk": "HIGH预警H6均线转弱=80.4、HIGH预警H5动量衰退=61.7、LOW预警L1情绪冰点=61.3",
+    "note": "每日速递,研究用途,不构成投资建议。基于 20260908 收盘数据,历史命中率不代表未来。"
+   },
+   "disclaimer": "每日速递,研究用途,不构成投资建议。基于 20260908 收盘数据,历史命中率不代表未来。"
+  },
+  {
    "date": "20260907",
    "meta": {
     "date": "20260907",
@@ -105,12 +179,84 @@
      "均线空头排列，警惕冲高回落，把握度中等"
     ],
     "hit": {
-     "direction": null,
-     "actual_sh_pct": null,
-     "actual_direction": null,
-     "range_hit": null,
-     "sector_hits": null,
-     "middle_hits": null
+     "direction": false,
+     "actual_sh_pct": 0.36,
+     "actual_direction": "flat",
+     "range_hit": true,
+     "sector_hits": [
+      {
+       "name": "电子",
+       "actual_pct": -0.05,
+       "hit": true,
+       "lo": 2.0,
+       "hi": 2.5,
+       "raw_hit": false,
+       "eff_lo": -0.47,
+       "eff_hi": 4.97
+      },
+      {
+       "name": "农林牧渔",
+       "actual_pct": 3.67,
+       "hit": true,
+       "lo": 1.5,
+       "hi": 2.0,
+       "raw_hit": false,
+       "eff_lo": -0.73,
+       "eff_hi": 4.23
+      }
+     ],
+     "middle_hits": [
+      {
+       "name": "深证成指",
+       "lo": 1.0,
+       "hi": 1.5,
+       "actual_pct": 0.04,
+       "hit": false
+      },
+      {
+       "name": "创业板指",
+       "lo": 2.0,
+       "hi": 2.5,
+       "actual_pct": -0.28,
+       "hit": false
+      },
+      {
+       "name": "科创50",
+       "lo": 1.5,
+       "hi": 2.0,
+       "actual_pct": -0.47,
+       "hit": false
+      },
+      {
+       "name": "北证50",
+       "lo": 0.5,
+       "hi": 1.0,
+       "actual_pct": -0.53,
+       "hit": false
+      },
+      {
+       "name": "恒生指数",
+       "lo": -1.5,
+       "hi": -1.0,
+       "actual_pct": -0.17,
+       "hit": false
+      },
+      {
+       "name": "恒生科技",
+       "lo": -1.5,
+       "hi": -1.0,
+       "actual_pct": -1.01,
+       "hit": true
+      },
+      {
+       "name": "10年国债",
+       "lo": -1.0,
+       "hi": 1.0,
+       "actual_bp": null,
+       "hit": null
+      }
+     ],
+     "direction_call_hit": false
     },
     "roles": {
      "fund": "北向成交额高企但机构席位净空，资金面偏谨慎，短期或震荡偏弱。",
@@ -249,7 +395,8 @@
     "risk": "警惕均线空头排列下的冲高回落，机构期货净空单压制，美股期货下跌外部情绪分化。市场宽度偏弱，参与度不足，注意结构性风险。",
     "note": "AI 生成,研究用途,不构成投资建议。基于 20260907 收盘数据,历史命中率不代表未来。"
    },
-   "disclaimer": "AI 生成,研究用途,不构成投资建议。基于 20260907 收盘数据,历史命中率不代表未来。"
+   "disclaimer": "AI 生成,研究用途,不构成投资建议。基于 20260907 收盘数据,历史命中率不代表未来。",
+   "_backfilled_via": "20260908"
   },
   {
    "date": "20260904",
@@ -5062,28 +5209,28 @@
    "_backfilled_via": "20260811"
   }
  ],
- "total": 21,
+ "total": 22,
  "offset": 0,
  "limit": 90,
  "stats": {
   "30d": {
-   "n": 20,
+   "n": 21,
    "hit": 0,
    "hit_rate": 0.0,
    "direction": {
-    "n": 9,
+    "n": 10,
     "hit": 3,
-    "hit_rate": 0.333
+    "hit_rate": 0.3
    }
   },
   "90d": {
-   "n": 20,
+   "n": 21,
    "hit": 0,
    "hit_rate": 0.0,
    "direction": {
-    "n": 9,
+    "n": 10,
     "hit": 3,
-    "hit_rate": 0.333
+    "hit_rate": 0.3
    }
   }
  }
