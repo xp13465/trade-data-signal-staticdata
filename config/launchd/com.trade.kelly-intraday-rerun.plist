@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.trade.kelly-intraday-rerun</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/USER/code/trade-data/scripts/kelly_intraday_rerun.sh</string>
+    </array>
+    <!-- 信号凯利盘中增量回测档(交易日 9:40, 用户拍板方向A, docs/kelly/analysis/intraday-backtest-rerun-design-20260908.md §6):
+         9/7 信号需 9/8 开盘价才入账, 17:50 全量回测一天一次太晚 -> 9:40 开学后补跑一轮, 用 akshare
+         fund_etf_spot_em 注入 9/8 真实开盘价, 只算上一交易日(T)信号, 产物独立 signal_kelly_trades_intraday.json
+         (前端独立盘中视图), 绝不动主档历史。
+         交易日后周一至周五 9:40 触发(无 Weekday, 脚本内 is_trading_day 闸门处理节假日)。
+         防撞车: 单档限时 3min(perl alarm), 9:43 前完避开 9:45 intraday-snapshot; deploy 锁 with_lock --nb
+         活进程持锁则跳过本轮(留 17:50 全量真收盘价); 失败 SEVERE notify。
+         2026-09-08 新建。 -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>9</integer>
+        <key>Minute</key>
+        <integer>40</integer>
+    </dict>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+        <key>REPO</key>
+        <string>/Users/USER/code/trade-data</string>
+        <key>GIT_REPO</key>
+        <string>/Users/USER/code/trade</string>
+        <key>PURGE_SECRET</key>
+        <string>2268f345ab8e8ee4a17ab015d199b14a12030bd13e169e319fa84d464ed983fd</string>
+    </dict>
+    <key>WorkingDirectory</key>
+    <string>/Users/USER/code/trade-data</string>
+    <key>StandardOutPath</key>
+    <string>/Users/USER/code/trade-data/data/logs/kelly_intraday_rerun_launchd.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/USER/code/trade-data/data/logs/kelly_intraday_rerun_launchd.err</string>
+    <key>RunAtLoad</key>
+    <false/>
+    <!-- 超时 200s: 脚本内 perl alarm 已限 3min, launchd 兜底多给 20s 防僵死。 -->
+    <key>ExitTimeOut</key>
+    <integer>200</integer>
+</dict>
+</plist>
