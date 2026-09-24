@@ -9,7 +9,8 @@
     "last_duration_sec": 4010,
     "log_anomaly": false,
     "log_anomaly_keyword": null,
-    "log_anomaly_line": null
+    "log_anomaly_line": null,
+    "r2_skip_count": 0
   },
   {
     "task": "backfill_evening",
@@ -21,7 +22,8 @@
     "last_duration_sec": 2366,
     "log_anomaly": false,
     "log_anomaly_keyword": null,
-    "log_anomaly_line": null
+    "log_anomaly_line": null,
+    "r2_skip_count": 0
   },
   {
     "task": "intraday_snapshot",
@@ -33,7 +35,8 @@
     "last_duration_sec": 379,
     "log_anomaly": false,
     "log_anomaly_keyword": null,
-    "log_anomaly_line": null
+    "log_anomaly_line": null,
+    "r2_skip_count": 0
   },
   {
     "task": "futures_backfill",
@@ -45,7 +48,8 @@
     "last_duration_sec": 903,
     "log_anomaly": false,
     "log_anomaly_keyword": null,
-    "log_anomaly_line": null
+    "log_anomaly_line": null,
+    "r2_skip_count": 0
   },
   {
     "task": "lhb_backfill",
@@ -57,19 +61,21 @@
     "last_duration_sec": 837,
     "log_anomaly": false,
     "log_anomaly_keyword": null,
-    "log_anomaly_line": null
+    "log_anomaly_line": null,
+    "r2_skip_count": 0
   },
   {
     "task": "rzhb_backfill",
     "name": "两融",
     "schedule": "T+1 08:00",
     "est_text": "约2秒",
-    "last_run": "2026-09-23 19:15",
+    "last_run": "2026-09-24 08:00",
     "last_exit": 0,
     "last_duration_sec": 2,
     "log_anomaly": false,
     "log_anomaly_keyword": null,
-    "log_anomaly_line": null
+    "log_anomaly_line": null,
+    "r2_skip_count": 0
   },
   {
     "task": "us_stock_morning",
@@ -77,11 +83,12 @@
     "schedule": "05:00",
     "est_text": "约12分钟",
     "last_run": "2026-09-24 05:00",
-    "last_exit": null,
-    "last_duration_sec": null,
+    "last_exit": 0,
+    "last_duration_sec": 822,
     "log_anomaly": false,
     "log_anomaly_keyword": null,
-    "log_anomaly_line": null
+    "log_anomaly_line": null,
+    "r2_skip_count": 0
   },
   {
     "task": "etf_national_team",
@@ -93,7 +100,8 @@
     "last_duration_sec": 181,
     "log_anomaly": false,
     "log_anomaly_keyword": null,
-    "log_anomaly_line": null
+    "log_anomaly_line": null,
+    "r2_skip_count": 0
   },
   {
     "task": "lab_auto",
@@ -105,7 +113,8 @@
     "last_duration_sec": 1098,
     "log_anomaly": false,
     "log_anomaly_keyword": null,
-    "log_anomaly_line": null
+    "log_anomaly_line": null,
+    "r2_skip_count": 0
   },
   {
     "task": "overfit_monitor",
@@ -117,7 +126,8 @@
     "last_duration_sec": 165,
     "log_anomaly": false,
     "log_anomaly_keyword": null,
-    "log_anomaly_line": null
+    "log_anomaly_line": null,
+    "r2_skip_count": 0
   },
   {
     "task": "s06_snapshot",
@@ -129,7 +139,8 @@
     "last_duration_sec": 17,
     "log_anomaly": false,
     "log_anomaly_keyword": null,
-    "log_anomaly_line": null
+    "log_anomaly_line": null,
+    "r2_skip_count": 0
   },
   {
     "task": "check_data_gap",
@@ -141,7 +152,8 @@
     "last_duration_sec": 24,
     "log_anomaly": false,
     "log_anomaly_keyword": null,
-    "log_anomaly_line": null
+    "log_anomaly_line": null,
+    "r2_skip_count": 0
   },
   {
     "task": "turnover_backfill",
@@ -153,7 +165,8 @@
     "last_duration_sec": 4068,
     "log_anomaly": true,
     "log_anomaly_keyword": "TimeoutError:",
-    "log_anomaly_line": "⚠ PUT data/boot.json attempt 1 失败(TimeoutError: The write operation timed out), 1s 后重试"
+    "log_anomaly_line": "⚠ PUT data/boot.json attempt 1 失败(TimeoutError: The write operation timed out), 1s 后重试",
+    "r2_skip_count": 0
   },
   {
     "task": "nextday_plan",
@@ -165,7 +178,8 @@
     "last_duration_sec": 15,
     "log_anomaly": false,
     "log_anomaly_keyword": null,
-    "log_anomaly_line": null
+    "log_anomaly_line": null,
+    "r2_skip_count": 0
   },
   {
     "task": "nextday_gap_check",
@@ -177,6 +191,35 @@
     "last_duration_sec": 9,
     "log_anomaly": true,
     "log_anomaly_keyword": "ConnectionError:",
-    "log_anomaly_line": "[nextday_gap_check] ⚠ 第 1 次拉开盘价失败: akshare fund_etf_spot_em 拉取失败: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    "log_anomaly_line": "[nextday_gap_check] ⚠ 第 1 次拉开盘价失败: akshare fund_etf_spot_em 拉取失败: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+    "r2_skip_count": 0
+  },
+  {
+    "task": "gen_daily_brief",
+    "name": "AI每日速递",
+    "schedule": "每日 20:40",
+    "est_text": "-",
+    "last_run": "2026-09-23 20:40",
+    "last_exit": null,
+    "last_duration_sec": null,
+    "log_anomaly": false,
+    "log_anomaly_keyword": null,
+    "log_anomaly_line": null,
+    "log_anomaly_severity": null,
+    "r2_skip_count": 0
+  },
+  {
+    "task": "fetch_news",
+    "name": "新闻采集",
+    "schedule": "7:30-21:00 每30min",
+    "est_text": "-",
+    "last_run": "2026-09-24 09:01",
+    "last_exit": null,
+    "last_duration_sec": null,
+    "log_anomaly": false,
+    "log_anomaly_keyword": null,
+    "log_anomaly_line": null,
+    "log_anomaly_severity": null,
+    "r2_skip_count": 0
   }
 ]
