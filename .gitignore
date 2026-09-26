@@ -23,3 +23,18 @@ db/*.db
 # 保留:
 # config/*     (配置: .env.example/wrangler.jsonc/launchd plist模板)
 # data/*.json  (小JSON差异化日志)
+
+# >>> large-json auto-generated >>>
+# 由 scripts/large_json_excludes.py 自动维护(2026-09-25), 勿手改。
+# 排除 staticdata 备份 git 仓库 data/ 下 >20MB 的 JSON: 移出 git, 改走 R2 私有桶
+# signal-backup large-json/<YYYY-MM-DD>/<相对data路径>.gz 每日备份(日14天+周8周+月12月)。
+/data/accum_nav_map.json
+/data/offshore_fund_fee_detail.json
+/data/offshore_fund_performance.json
+/data/offshore_fund_purchase_status.json
+/data/offshore_fund_risk_indicator.json
+/data/signal_kelly_trades.json
+/data/signal_kelly_trades_sdc.json
+/data/trade_sim/trade_sim_cgb_idx_full.json
+# <<< large-json auto-generated <<<
+
