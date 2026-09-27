@@ -1,6 +1,6 @@
 # large-json 备份清单(large-json-backup-manifest)
 
-> 由 `scripts/upload_r2.py upload-large-json` 自动生成(2026-09-27), 勿手改。
+> 由 `scripts/upload_r2.py upload-large-json` 自动生成(2026-09-28), 勿手改。
 
 ## 机制一句话
 
@@ -22,11 +22,11 @@ staticdata 备份仓库 7 个 >20MB JSON(共 ~319MB)已移出 git 跟踪(备份�
 
 | 相对 data/ 路径 | 完整字节 | sha256 | 最新 R2 key | 保留档位 | 生成时间 |
 |---|---|---|---|---|---|
-| accum_nav_map.json | 26181355 | 9fa1cb91ebf93b0d820e4a8417288a2d0f63458e1311c11e2c9e21964cf1f164 | `large-json/2026-09-27/accum_nav_map.json.gz` | 日+周 | 2026-09-27 |
-| offshore_fund_fee_detail.json | 21713076 | 0d98973e65925fc86a7eec553c6037d00444dd0c292c9c992bc2319c08815710 | `large-json/2026-09-27/offshore_fund_fee_detail.json.gz` | 日+周 | 2026-09-27 |
-| offshore_fund_performance.json | 40531280 | 48197816fc88de51054f712da118956ed09d43b004abbeb598191c951392b588 | `large-json/2026-09-27/offshore_fund_performance.json.gz` | 日+周 | 2026-09-27 |
-| offshore_fund_purchase_status.json | 34272288 | c82a7e57698fe982929bebd87581fe6a28e00155d2919e897bb8c9f380affdd3 | `large-json/2026-09-27/offshore_fund_purchase_status.json.gz` | 日+周 | 2026-09-27 |
-| offshore_fund_risk_indicator.json | 22394747 | 717a029010f753c5e063e63c98c02642d2e706feab19007b53798e54867debb4 | `large-json/2026-09-27/offshore_fund_risk_indicator.json.gz` | 日+周 | 2026-09-27 |
-| signal_kelly_trades.json | 86586298 | 792feb51ef192e035c2a4406f6b38d33bb5972c9d246e096cb5135e8a538d609 | `large-json/2026-09-27/signal_kelly_trades.json.gz` | 日+周 | 2026-09-27 |
-| signal_kelly_trades_sdc.json | 87728074 | 0b909082ee2a4937ab0d2d7744ce8b97f25e1be6a7fbdbaa058cb5eb5dbed0fb | `large-json/2026-09-27/signal_kelly_trades_sdc.json.gz` | 日+周 | 2026-09-27 |
-| trade_sim/trade_sim_cgb_idx_full.json | 20229144 | fa6b46f1a87ec21a51de9af20d0365598acc9adb107ec9a0ec6139c02a14c429 | `large-json/2026-09-27/trade_sim/trade_sim_cgb_idx_full.json.gz` | 日+周 | 2026-09-27 |
+| accum_nav_map.json | 26181355 | 9fa1cb91ebf93b0d820e4a8417288a2d0f63458e1311c11e2c9e21964cf1f164 | `large-json/2026-09-28/accum_nav_map.json.gz` | 日 | 2026-09-28 |
+| offshore_fund_fee_detail.json | 21713076 | 0d98973e65925fc86a7eec553c6037d00444dd0c292c9c992bc2319c08815710 | `large-json/2026-09-28/offshore_fund_fee_detail.json.gz` | 日 | 2026-09-28 |
+| offshore_fund_performance.json | 40531280 | 48197816fc88de51054f712da118956ed09d43b004abbeb598191c951392b588 | `large-json/2026-09-28/offshore_fund_performance.json.gz` | 日 | 2026-09-28 |
+| offshore_fund_purchase_status.json | 34272288 | c82a7e57698fe982929bebd87581fe6a28e00155d2919e897bb8c9f380affdd3 | `large-json/2026-09-28/offshore_fund_purchase_status.json.gz` | 日 | 2026-09-28 |
+| offshore_fund_risk_indicator.json | 22394747 | 717a029010f753c5e063e63c98c02642d2e706feab19007b53798e54867debb4 | `large-json/2026-09-28/offshore_fund_risk_indicator.json.gz` | 日 | 2026-09-28 |
+| signal_kelly_trades.json | 86586298 | 8234ff82e79e24a6d8b25a2c253311086b124cdf23709a5e62cbdb47730efb7d | `large-json/2026-09-28/signal_kelly_trades.json.gz` | 日 | 2026-09-28 |
+| signal_kelly_trades_sdc.json | 87728074 | 6ac2cd3de1f5c827b59b2ac029d5cc27a49720a1af22498774f0746ef9a22336 | `large-json/2026-09-28/signal_kelly_trades_sdc.json.gz` | 日 | 2026-09-28 |
+| trade_sim/trade_sim_cgb_idx_full.json | 20229144 | fa6b46f1a87ec21a51de9af20d0365598acc9adb107ec9a0ec6139c02a14c429 | `large-json/2026-09-28/trade_sim/trade_sim_cgb_idx_full.json.gz` | 日 | 2026-09-28 |
