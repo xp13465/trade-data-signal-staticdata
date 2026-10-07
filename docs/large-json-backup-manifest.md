@@ -30418,7 +30418,7 @@ staticdata 备份仓库 7 个 >20MB JSON(共 ~319MB)已移出 git 跟踪(备份�
 | offshore_fund_performance.json | 40531280 | 48197816fc88de51054f712da118956ed09d43b004abbeb598191c951392b588 | `large-json/offshore_fund_performance.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-07 |
 | offshore_fund_purchase_status.json | 34272288 | c82a7e57698fe982929bebd87581fe6a28e00155d2919e897bb8c9f380affdd3 | `large-json/offshore_fund_purchase_status.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-07 |
 | offshore_fund_risk_indicator.json | 22394747 | 717a029010f753c5e063e63c98c02642d2e706feab19007b53798e54867debb4 | `large-json/offshore_fund_risk_indicator.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-07 |
-| signal_kelly_trades.json | 86864906 | c350650a7f40cdb3dd0423440f6bd8b93a9a6233fe3ff6c199295855e82aeb11 | `large-json/signal_kelly_trades.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-07 |
+| signal_kelly_trades.json | 86864906 | f7fb5331183ecbd1545e59f8ba557ff2caf2264650de292ea7bdd319dbd19483 | `large-json/signal_kelly_trades.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-07 |
 | signal_kelly_trades_parts/lab_etf_approx__A_p1.json | 285736 | 20e199cc6920fc6df9ba6aabf9af6a025c833144118631e8d7002bd7801a5636 | `large-json/signal_kelly_trades_parts/lab_etf_approx__A_p1.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-07 |
 | signal_kelly_trades_parts/lab_etf_approx__B_p1.json | 285203 | 80b4186a333faa7a954d50b685e70605bc228e6a19bd99a9e49adc5c68dd9aa0 | `large-json/signal_kelly_trades_parts/lab_etf_approx__B_p1.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-07 |
 | signal_kelly_trades_parts/lab_etf_approx__C_p1.json | 285444 | 110560934d1a0b2a38184e31855e2bb3b21038ee2795363398a37dbfef239fdf | `large-json/signal_kelly_trades_parts/lab_etf_approx__C_p1.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-07 |
@@ -30802,7 +30802,7 @@ staticdata 备份仓库 7 个 >20MB JSON(共 ~319MB)已移出 git 跟踪(备份�
 | signal_kelly_trades_parts/t2024.json | 10402409 | 69427f14a4d9c7e155b1b4a4e5ec7b0d220ed00c69146f7bc49fdf517246fb5d | `large-json/signal_kelly_trades_parts/t2024.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-07 |
 | signal_kelly_trades_parts/t2025.json | 19499579 | 30f00675df9666be0a2704a531fe5f3e98dbb340454a7295f72f9b5ec35ef0ad | `large-json/signal_kelly_trades_parts/t2025.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-07 |
 | signal_kelly_trades_parts/t2026.json | 17098675 | 9f2623923689789c00db258b3dacbe657d2b5ca80b6d092319e597cd44d9a3d9 | `large-json/signal_kelly_trades_parts/t2026.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-07 |
-| signal_kelly_trades_sdc.json | 88174250 | aa32e14a6be977b9e2336e50517adc35c954714239a0129cfc274e414e32541f | `large-json/signal_kelly_trades_sdc.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-07 |
+| signal_kelly_trades_sdc.json | 88174250 | 561558cce5bd97f60445d53ea023addb955abc60039350cfeb49a4676735eebe | `large-json/signal_kelly_trades_sdc.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-07 |
 | signal_kelly_trades_sdc_parts/lab_etf_approx__A_p1.json | 287205 | d0694fcd7a706d39e08b530e4df6fc25876830f4e442f0148696aa024a65ec3b | `large-json/signal_kelly_trades_sdc_parts/lab_etf_approx__A_p1.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-07 |
 | signal_kelly_trades_sdc_parts/lab_etf_approx__A_p2.json | 21814 | 3127eadf25f70c4cab1c5b6ce0271c04f5a2b538077679b83b6d56a5919a41d4 | `large-json/signal_kelly_trades_sdc_parts/lab_etf_approx__A_p2.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-07 |
 | signal_kelly_trades_sdc_parts/lab_etf_approx__B_p1.json | 287158 | 5d816e159654e23ad8f3215d547207d4075f018adc0c27afebe43182ff87a13a | `large-json/signal_kelly_trades_sdc_parts/lab_etf_approx__B_p1.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-07 |
