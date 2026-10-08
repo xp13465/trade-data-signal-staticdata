@@ -30089,10 +30089,10 @@ staticdata 备份仓库 7 个 >20MB JSON(共 ~319MB)已移出 git 跟踪(备份�
 | index/thsc_309115-all.json | 116918 | bd8d0810d23d16ad845afd93d26c15617245fa3cd849677e0efacec26fa855e4 | `large-json/index/thsc_309115-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-09 |
 | index/thsc_309119-all.json | 112229 | b9ade177d45f026e3e6e86a885bcb79d2f43e65ec1774358c6f65e43218498ee | `large-json/index/thsc_309119-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-09 |
 | index/thsc_309128-all.json | 102543 | a7bdac858876c2c82be2c45f0b3be756d1b03d3f1a2c2313755a317bb7c755cf | `large-json/index/thsc_309128-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-09 |
-| index/us_dji-all.json | 753175 | 7664fbd2763c3ad7d219afc5aa2d22c4c4c1db67af77499946d3ca738c54dd75 | `large-json/index/us_dji-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-09 |
-| index/us_ixic-all.json | 752838 | f1f2b78241091f0fd40bb8a3be14b53468eb79ce6731ff232121f0e7cd39f9a1 | `large-json/index/us_ixic-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-09 |
-| index/us_ndx-all.json | 559169 | 81e979c4de2eb9a89d324161c089e8e5a3247aaaf65766488042f6784d102be5 | `large-json/index/us_ndx-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-09 |
-| index/us_spx-all.json | 737600 | 2cccca73230080444ac81f54e33540fcc082d7c2efdc58ad3d1681464f9c3f16 | `large-json/index/us_spx-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-09 |
+| index/us_dji-all.json | 753310 | 0cfd7d693fc339bcceda9ae552fe8d5102ef1780f62a577807d2bf140adcb16a | `large-json/index/us_dji-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-09 |
+| index/us_ixic-all.json | 752976 | 3565fe1c4a6b2cc5139c742175855533bf4c7cd5777561f7f0a8b4e3d0ae1532 | `large-json/index/us_ixic-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-09 |
+| index/us_ndx-all.json | 559307 | 0ea870bc28b4c691b09959ab7f3f50fd1219ef28ca81491706a1378fba51c330 | `large-json/index/us_ndx-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-09 |
+| index/us_spx-all.json | 737733 | 6628f34568ea1d10c86bde74e8b2ea2a57d9284dd8ffcedd4a3e149dfc127563 | `large-json/index/us_spx-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-09 |
 | lab/lab_backtest.json | 65503 | 63ac44c67d253aac4a4e7b01174391c1c06782bdc621b2538e08b854f878fee7 | `large-json/lab/lab_backtest.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-09 |
 | lab/lab_backtest_bj50.json | 26241 | 25bbaf970651664ae3c695a3abc19619725304f3c02e8a3771849e7635957a7e | `large-json/lab/lab_backtest_bj50.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-09 |
 | lab/lab_backtest_csi1000.json | 26409 | 54609e1346bdec16fe5de4fcc8b77d9261ed60390769b70dccb438a531609854 | `large-json/lab/lab_backtest_csi1000.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-09 |
@@ -30418,7 +30418,7 @@ staticdata 备份仓库 7 个 >20MB JSON(共 ~319MB)已移出 git 跟踪(备份�
 | offshore_fund_performance.json | 40531280 | 48197816fc88de51054f712da118956ed09d43b004abbeb598191c951392b588 | `large-json/offshore_fund_performance.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-09 |
 | offshore_fund_purchase_status.json | 34272288 | c82a7e57698fe982929bebd87581fe6a28e00155d2919e897bb8c9f380affdd3 | `large-json/offshore_fund_purchase_status.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-09 |
 | offshore_fund_risk_indicator.json | 22394747 | 717a029010f753c5e063e63c98c02642d2e706feab19007b53798e54867debb4 | `large-json/offshore_fund_risk_indicator.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-09 |
-| signal_kelly_trades.json | 87013438 | 1fd4615fd1444027fb6c133ac5adb4d5058ed7e67948bd9350dcd139d4639043 | `large-json/signal_kelly_trades.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-09 |
+| signal_kelly_trades.json | 87013438 | f67321cb086fe912f7416c74d47a256c10ff3b836a956828f4c98841f6e03892 | `large-json/signal_kelly_trades.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-09 |
 | signal_kelly_trades_parts/lab_etf_approx__A_p1.json | 285736 | 20e199cc6920fc6df9ba6aabf9af6a025c833144118631e8d7002bd7801a5636 | `large-json/signal_kelly_trades_parts/lab_etf_approx__A_p1.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-09 |
 | signal_kelly_trades_parts/lab_etf_approx__B_p1.json | 285203 | 80b4186a333faa7a954d50b685e70605bc228e6a19bd99a9e49adc5c68dd9aa0 | `large-json/signal_kelly_trades_parts/lab_etf_approx__B_p1.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-09 |
 | signal_kelly_trades_parts/lab_etf_approx__C_p1.json | 285444 | 110560934d1a0b2a38184e31855e2bb3b21038ee2795363398a37dbfef239fdf | `large-json/signal_kelly_trades_parts/lab_etf_approx__C_p1.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-09 |
@@ -30802,7 +30802,7 @@ staticdata 备份仓库 7 个 >20MB JSON(共 ~319MB)已移出 git 跟踪(备份�
 | signal_kelly_trades_parts/t2024.json | 10402093 | 24d84846a84f14fa2b105bf2b95bfbaab1edf39eb68b2221ef9fda17301e7f42 | `large-json/signal_kelly_trades_parts/t2024.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-09 |
 | signal_kelly_trades_parts/t2025.json | 19499279 | 6a80e5aa8bd1f256a906813c6f2687dcdfde3617b0e4c3f137086bb0e8f99e16 | `large-json/signal_kelly_trades_parts/t2025.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-09 |
 | signal_kelly_trades_parts/t2026.json | 17248171 | 730c4e9f0777b1ba75063ec6344a2b7af25e4539cca128bd2af2e6c9f3c2481d | `large-json/signal_kelly_trades_parts/t2026.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-09 |
-| signal_kelly_trades_sdc.json | 88177970 | a23e7620eaea345dcb32a6500096451766e07be197fd58ae2db6000af3abc642 | `large-json/signal_kelly_trades_sdc.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-09 |
+| signal_kelly_trades_sdc.json | 88177970 | 8bcfebea02e05e33cccd57ce17f5e6232e11ada2abfc8a9a4645056b1d36d492 | `large-json/signal_kelly_trades_sdc.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-09 |
 | signal_kelly_trades_sdc_parts/lab_etf_approx__A_p1.json | 287205 | d0694fcd7a706d39e08b530e4df6fc25876830f4e442f0148696aa024a65ec3b | `large-json/signal_kelly_trades_sdc_parts/lab_etf_approx__A_p1.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-09 |
 | signal_kelly_trades_sdc_parts/lab_etf_approx__A_p2.json | 21814 | 3127eadf25f70c4cab1c5b6ce0271c04f5a2b538077679b83b6d56a5919a41d4 | `large-json/signal_kelly_trades_sdc_parts/lab_etf_approx__A_p2.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-09 |
 | signal_kelly_trades_sdc_parts/lab_etf_approx__B_p1.json | 287158 | 5d816e159654e23ad8f3215d547207d4075f018adc0c27afebe43182ff87a13a | `large-json/signal_kelly_trades_sdc_parts/lab_etf_approx__B_p1.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-09 |
