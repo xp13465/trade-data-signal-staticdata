@@ -3,26 +3,26 @@
   "target_type": "etf",
   "target_name": "588050",
   "alert": {
-    "date": "20261009",
+    "date": "20261012",
     "target_id": "588050",
     "target_type": "etf",
-    "high": 26.06,
-    "low": 55.99,
+    "high": 27.75,
+    "low": 68.21,
     "high_level": "中性",
-    "low_level": "中性",
+    "low_level": "关注",
     "dims": {
       "H1": 1.25,
-      "H2": 17.14,
+      "H2": 16.35,
       "H3": 35.42,
-      "H4": 42.86,
+      "H4": 40.87,
       "H5": 55.83,
-      "H6": 52.92,
-      "H7": 6.67,
+      "H6": 77.71,
+      "H7": 7.08,
       "H8": null,
       "L1": 98.75,
-      "L2": 42.08,
-      "L3": 57.14,
-      "L4": 17.5,
+      "L2": 91.67,
+      "L3": 59.13,
+      "L4": 17.92,
       "L5": null,
       "L6": 50.42,
       "L7": null,
@@ -43,22 +43,22 @@
       "etf_adjust": false
     },
     "position": {
-      "hands": 0,
-      "volatility": 3.83,
-      "label": "观望",
+      "hands": 1,
+      "volatility": 3.9,
+      "label": "1手",
       "detail": {
-        "opp": 55.99,
-        "ma60_ratio": 0.869,
+        "opp": 68.21,
+        "ma60_ratio": 0.8727,
         "trend": 0.0,
-        "macd_hist": -0.0245,
+        "macd_hist": -0.0282,
         "mom": 10.0,
         "vol": 50.0,
-        "volatility": 3.83,
+        "volatility": 3.9,
         "amt_pct": null,
         "liq": 50.0,
-        "drawdown": -34.21,
+        "drawdown": -34.34,
         "draw": 85.0,
-        "score": 39.6,
+        "score": 43.87,
         "regime": "range",
         "regime_th": {
           "opp_low": 35.0,
@@ -75,10 +75,19 @@
         {
           "k": "H4",
           "name": "位置偏高",
-          "score": 42.86,
+          "score": 40.87,
           "weight": 0.2,
-          "contribution": 8.57,
+          "contribution": 8.17,
           "hit": false,
+          "direction": "high"
+        },
+        {
+          "k": "H6",
+          "name": "均线转弱",
+          "score": 77.71,
+          "weight": 0.08,
+          "contribution": 6.22,
+          "hit": true,
           "direction": "high"
         },
         {
@@ -100,29 +109,20 @@
           "direction": "high"
         },
         {
-          "k": "H6",
-          "name": "均线转弱",
-          "score": 52.92,
-          "weight": 0.08,
-          "contribution": 4.23,
-          "hit": false,
-          "direction": "high"
-        },
-        {
           "k": "H2",
           "name": "量价背离",
-          "score": 17.14,
+          "score": 16.35,
           "weight": 0.08,
-          "contribution": 1.37,
+          "contribution": 1.31,
           "hit": false,
           "direction": "high"
         },
         {
           "k": "H7",
           "name": "汪汪队离场",
-          "score": 6.67,
+          "score": 7.08,
           "weight": 0.1,
-          "contribution": 0.67,
+          "contribution": 0.71,
           "hit": false,
           "direction": "high"
         },
@@ -147,20 +147,20 @@
           "direction": "low"
         },
         {
-          "k": "L3",
-          "name": "位置偏低",
-          "score": 57.14,
-          "weight": 0.15,
-          "contribution": 8.57,
-          "hit": false,
+          "k": "L2",
+          "name": "关注点密集",
+          "score": 91.67,
+          "weight": 0.18,
+          "contribution": 16.5,
+          "hit": true,
           "direction": "low"
         },
         {
-          "k": "L2",
-          "name": "关注点密集",
-          "score": 42.08,
-          "weight": 0.18,
-          "contribution": 7.57,
+          "k": "L3",
+          "name": "位置偏低",
+          "score": 59.13,
+          "weight": 0.15,
+          "contribution": 8.87,
           "hit": false,
           "direction": "low"
         },
@@ -176,9 +176,9 @@
         {
           "k": "L4",
           "name": "汪汪队入场",
-          "score": 17.5,
+          "score": 17.92,
           "weight": 0.15,
-          "contribution": 2.62,
+          "contribution": 2.69,
           "hit": false,
           "direction": "low"
         }
@@ -199,7 +199,7 @@
         {
           "k": "H2",
           "name": "量价背离",
-          "value": 17.14,
+          "value": 16.35,
           "threshold": 60,
           "unit": "分",
           "desc": "量价背离(缩量上涨+高位)",
@@ -219,7 +219,7 @@
         {
           "k": "H4",
           "name": "位置偏高",
-          "value": 42.86,
+          "value": 40.87,
           "threshold": 60,
           "unit": "%",
           "desc": "1年位置分位",
@@ -239,17 +239,17 @@
         {
           "k": "H6",
           "name": "均线转弱",
-          "value": 52.92,
+          "value": 77.71,
           "threshold": 60,
           "unit": "分",
           "desc": "均线转弱(空头排列)",
-          "hit": false,
-          "status": "接近"
+          "hit": true,
+          "status": "命中"
         },
         {
           "k": "H7",
           "name": "汪汪队离场",
-          "value": 6.67,
+          "value": 7.08,
           "threshold": 60,
           "unit": "分",
           "desc": "汪汪队离场(近30日share_outflow)",
@@ -281,17 +281,17 @@
         {
           "k": "L2",
           "name": "关注点密集",
-          "value": 42.08,
+          "value": 91.67,
           "threshold": 60,
           "unit": "分",
           "desc": "关注点密集(近10日buy信号)",
-          "hit": false,
-          "status": "未命中"
+          "hit": true,
+          "status": "命中"
         },
         {
           "k": "L3",
           "name": "位置偏低",
-          "value": 57.14,
+          "value": 59.13,
           "threshold": 60,
           "unit": "%",
           "desc": "1年位置低位(100-分位)",
@@ -301,7 +301,7 @@
         {
           "k": "L4",
           "name": "汪汪队入场",
-          "value": 17.5,
+          "value": 17.92,
           "threshold": 60,
           "unit": "分",
           "desc": "汪汪队入场(近30日share_surge)",
@@ -352,123 +352,135 @@
     },
     "history_analogy": {
       "high": {
-        "cur_date": "20261009",
+        "cur_date": "20261012",
         "top_n": 3,
         "matches": [
           {
-            "date": "20261008",
+            "date": "20250523",
             "jaccard": 1.0,
-            "cosine": 1.0,
-            "combined": 1.0,
+            "cosine": 0.9843,
+            "combined": 0.9921,
             "hit_overlap": [
-              "L1"
+              "H6",
+              "L1",
+              "L2"
             ],
             "forward_returns": {
-              "ret_5d": null,
-              "ret_10d": null,
-              "ret_20d": null
+              "ret_5d": -0.2,
+              "ret_10d": 1.89,
+              "ret_20d": -1.79
             }
           },
           {
-            "date": "20260930",
+            "date": "20250522",
             "jaccard": 1.0,
-            "cosine": 0.9919,
-            "combined": 0.9959,
+            "cosine": 0.9794,
+            "combined": 0.9897,
             "hit_overlap": [
-              "L1"
+              "H6",
+              "L1",
+              "L2"
             ],
             "forward_returns": {
-              "ret_5d": null,
-              "ret_10d": null,
-              "ret_20d": null
+              "ret_5d": -0.39,
+              "ret_10d": 0.2,
+              "ret_20d": -3.24
             }
           },
           {
-            "date": "20260928",
-            "jaccard": 0.5,
-            "cosine": 0.9807,
-            "combined": 0.7403,
+            "date": "20250521",
+            "jaccard": 0.75,
+            "cosine": 0.9729,
+            "combined": 0.8615,
             "hit_overlap": [
-              "L1"
+              "H6",
+              "L1",
+              "L2"
             ],
             "forward_returns": {
-              "ret_5d": null,
-              "ret_10d": null,
-              "ret_20d": null
+              "ret_5d": -2.45,
+              "ret_10d": 0.2,
+              "ret_20d": -3.04
             }
           }
         ],
         "window_days": 756,
         "stats": {
-          "avg_ret_5d": null,
-          "avg_ret_10d": null,
-          "avg_ret_20d": null,
-          "n_up_10d": 0,
+          "avg_ret_5d": -1.01,
+          "avg_ret_10d": 0.76,
+          "avg_ret_20d": -2.69,
+          "n_up_10d": 3,
           "n_down_10d": 0,
-          "n_total_10d": 0
+          "n_total_10d": 3
         }
       },
       "low": {
-        "cur_date": "20261009",
+        "cur_date": "20261012",
         "top_n": 3,
         "matches": [
           {
-            "date": "20261008",
+            "date": "20250523",
             "jaccard": 1.0,
-            "cosine": 1.0,
-            "combined": 1.0,
+            "cosine": 0.9843,
+            "combined": 0.9921,
             "hit_overlap": [
-              "L1"
+              "H6",
+              "L1",
+              "L2"
             ],
             "forward_returns": {
-              "ret_5d": null,
-              "ret_10d": null,
-              "ret_20d": null
+              "ret_5d": -0.2,
+              "ret_10d": 1.89,
+              "ret_20d": -1.79
             }
           },
           {
-            "date": "20260930",
+            "date": "20250522",
             "jaccard": 1.0,
-            "cosine": 0.9919,
-            "combined": 0.9959,
+            "cosine": 0.9794,
+            "combined": 0.9897,
             "hit_overlap": [
-              "L1"
+              "H6",
+              "L1",
+              "L2"
             ],
             "forward_returns": {
-              "ret_5d": null,
-              "ret_10d": null,
-              "ret_20d": null
+              "ret_5d": -0.39,
+              "ret_10d": 0.2,
+              "ret_20d": -3.24
             }
           },
           {
-            "date": "20260928",
-            "jaccard": 0.5,
-            "cosine": 0.9807,
-            "combined": 0.7403,
+            "date": "20250521",
+            "jaccard": 0.75,
+            "cosine": 0.9729,
+            "combined": 0.8615,
             "hit_overlap": [
-              "L1"
+              "H6",
+              "L1",
+              "L2"
             ],
             "forward_returns": {
-              "ret_5d": null,
-              "ret_10d": null,
-              "ret_20d": null
+              "ret_5d": -2.45,
+              "ret_10d": 0.2,
+              "ret_20d": -3.04
             }
           }
         ],
         "window_days": 756,
         "stats": {
-          "avg_ret_5d": null,
-          "avg_ret_10d": null,
-          "avg_ret_20d": null,
-          "n_up_10d": 0,
+          "avg_ret_5d": -1.01,
+          "avg_ret_10d": 0.76,
+          "avg_ret_20d": -2.69,
+          "n_up_10d": 3,
           "n_down_10d": 0,
-          "n_total_10d": 0
+          "n_total_10d": 3
         }
       }
     },
     "human_text": {
-      "high": "高位预警指标处于中性区间,暂无明显过热信号",
-      "low": "低位机会指标处于中性区间,暂无明显冰点信号,但 L1 情绪冰点 有命中,整体加权后未达关注线"
+      "high": "高位预警指标处于中性区间,暂无明显过热信号,但 H6 均线转弱 有命中,整体加权后未达关注线",
+      "low": "市场偏冷,部分指标进入低位区,关注企稳信号;主要风险来自情绪冰点+关注点密集;历史3次相似特征后10日平均上涨0.76%(涨3次/跌0次),历史统计参考不代表未来必然走势"
     },
     "compliance_footer": "⚠️ 本分析基于历史数据统计,仅供学习参考,不构成投资建议或交易指令,市场有风险,决策需谨慎。历史类比仅作统计参考,不代表未来必然走势。",
     "no_data_hint": null
