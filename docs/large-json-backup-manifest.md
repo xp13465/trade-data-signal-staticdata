@@ -3637,10 +3637,10 @@ staticdata 备份仓库 7 个 >20MB JSON(共 ~319MB)已移出 git 跟踪(备份�
 | index/thsc_309115-all.json | 117454 | 55b1611ad167bc96f572ab697c7f2be51c9aa9cba283dc2fdd247947e4ef32f8 | `large-json/index/thsc_309115-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-14 |
 | index/thsc_309119-all.json | 112857 | feefb59f3978612e1c0fc037d31f87693869f19c5383e3b59d59f58218de19d4 | `large-json/index/thsc_309119-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-14 |
 | index/thsc_309128-all.json | 103299 | ce1762cc4098c8af3b27b78c1eaa19f1a5cc3078eaaf9cd11216efd9ecda5ac8 | `large-json/index/thsc_309128-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-14 |
-| index/us_dji-all.json | 753587 | d149eedbc4d1e609d57f512406364fc60b8eb043c0dd9d3f2400f6044508989f | `large-json/index/us_dji-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-14 |
-| index/us_ixic-all.json | 753437 | 1838ba04c35e29f4223a198f19578e156f2b2be389ac2a952f7c87194aea31d6 | `large-json/index/us_ixic-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-14 |
-| index/us_ndx-all.json | 559432 | a96d21c7f3e7b21a0c65a19770b7d520bca6ef4cb906a6f9d59b8395d14fcd36 | `large-json/index/us_ndx-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-14 |
-| index/us_spx-all.json | 737639 | 3a57f2c05ccb3d2ba53e772e55deb496ee07a47f14f41b5d13edffbfcf4117c7 | `large-json/index/us_spx-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-14 |
+| index/us_dji-all.json | 753727 | 77b72eebcbe3ba07446b8ddd579e296399b6b0882aaddfe72bb0eab2313a7e82 | `large-json/index/us_dji-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-14 |
+| index/us_ixic-all.json | 753799 | d2470f25eea5d112622592121f9875ff02644378be566b8351646d2ea6f30cdc | `large-json/index/us_ixic-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-14 |
+| index/us_ndx-all.json | 559571 | a3fc2af097f1d7702b4ef97b3dd3c2a53b8b7fcffa747dd2ca5becdbff38f5a0 | `large-json/index/us_ndx-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-14 |
+| index/us_spx-all.json | 737973 | e3df0f1e8fa36c614df2ad571fcd764e5874e879209c0a332db5fc718e3f091a | `large-json/index/us_spx-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-14 |
 | lab/lab_backtest.json | 65492 | a66e600c09f08c1b23aeadd3040a1afb8adb99fc2ac1b8b69eb3e06a3bc1f273 | `large-json/lab/lab_backtest.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-14 |
 | lab/lab_backtest_bj50.json | 26255 | c412407ed6022beac82231ba87ffbb8123c1f73b0a4311e0099494a9c24d8311 | `large-json/lab/lab_backtest_bj50.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-14 |
 | lab/lab_backtest_csi1000.json | 26420 | 80184955e4bfb2cf434323a6eff8d5cba9b6f53eb8bd2d5271c3ea0a681c6ffb | `large-json/lab/lab_backtest_csi1000.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-14 |
