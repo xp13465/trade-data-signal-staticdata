@@ -3,11 +3,11 @@
   "target_type": "index",
   "target_name": "北证50",
   "alert": {
-    "date": "20261016",
+    "date": "20261019",
     "target_id": "bj50",
     "target_type": "index",
-    "high": 20.9,
-    "low": 77.77,
+    "high": 20.88,
+    "low": 77.72,
     "high_level": "中性",
     "low_level": "机会",
     "dims": {
@@ -16,7 +16,7 @@
       "H3": 50.42,
       "H4": 0.4,
       "H5": 49.58,
-      "H6": 67.71,
+      "H6": 67.5,
       "H7": null,
       "H8": null,
       "L1": 95.0,
@@ -24,7 +24,7 @@
       "L3": 99.6,
       "L4": null,
       "L5": null,
-      "L6": 93.75,
+      "L6": 93.33,
       "L7": null,
       "L8": null
     },
@@ -49,18 +49,18 @@
       "volatility": 3.14,
       "label": "2手",
       "detail": {
-        "opp": 77.77,
-        "ma60_ratio": 0.893,
+        "opp": 77.72,
+        "ma60_ratio": 0.8912,
         "trend": 0.0,
-        "macd_hist": -13.6213,
+        "macd_hist": -15.8196,
         "mom": 10.0,
         "vol": 70.0,
         "volatility": 3.14,
         "amt_pct": null,
         "liq": 50.0,
-        "drawdown": -40.84,
+        "drawdown": -41.08,
         "draw": 100.0,
-        "score": 51.72,
+        "score": 51.7,
         "regime": "bear",
         "regime_th": {
           "opp_low": 30.0,
@@ -86,9 +86,9 @@
         {
           "k": "H6",
           "name": "均线转弱",
-          "score": 67.71,
+          "score": 67.5,
           "weight": 0.08,
-          "contribution": 5.42,
+          "contribution": 5.4,
           "hit": true,
           "direction": "high"
         },
@@ -151,9 +151,9 @@
         {
           "k": "L6",
           "name": "新低极端",
-          "score": 93.75,
+          "score": 93.33,
           "weight": 0.08,
-          "contribution": 7.5,
+          "contribution": 7.47,
           "hit": true,
           "direction": "low"
         },
@@ -223,7 +223,7 @@
         {
           "k": "H6",
           "name": "均线转弱",
-          "value": 67.71,
+          "value": 67.5,
           "threshold": 60,
           "unit": "分",
           "desc": "均线转弱(空头排列)",
@@ -305,7 +305,7 @@
         {
           "k": "L6",
           "name": "新低极端",
-          "value": 93.75,
+          "value": 93.33,
           "threshold": 60,
           "unit": "分",
           "desc": "新低极端(52周新低百分位)",
@@ -336,14 +336,31 @@
     },
     "history_analogy": {
       "high": {
-        "cur_date": "20261016",
+        "cur_date": "20261019",
         "top_n": 3,
         "matches": [
+          {
+            "date": "20261016",
+            "jaccard": 1.0,
+            "cosine": 1.0,
+            "combined": 1.0,
+            "hit_overlap": [
+              "H6",
+              "L1",
+              "L3",
+              "L6"
+            ],
+            "forward_returns": {
+              "ret_5d": null,
+              "ret_10d": null,
+              "ret_20d": null
+            }
+          },
           {
             "date": "20240823",
             "jaccard": 1.0,
             "cosine": 0.9989,
-            "combined": 0.9995,
+            "combined": 0.9994,
             "hit_overlap": [
               "H6",
               "L1",
@@ -372,44 +389,44 @@
               "ret_10d": null,
               "ret_20d": null
             }
-          },
-          {
-            "date": "20231019",
-            "jaccard": 1.0,
-            "cosine": 0.9984,
-            "combined": 0.9992,
-            "hit_overlap": [
-              "H6",
-              "L1",
-              "L3",
-              "L6"
-            ],
-            "forward_returns": {
-              "ret_5d": -1.49,
-              "ret_10d": -0.17,
-              "ret_20d": 9.84
-            }
           }
         ],
         "window_days": 756,
         "stats": {
-          "avg_ret_5d": -0.28,
-          "avg_ret_10d": -2.34,
-          "avg_ret_20d": 2.67,
+          "avg_ret_5d": 0.92,
+          "avg_ret_10d": -4.51,
+          "avg_ret_20d": -4.51,
           "n_up_10d": 0,
-          "n_down_10d": 2,
-          "n_total_10d": 2
+          "n_down_10d": 1,
+          "n_total_10d": 1
         }
       },
       "low": {
-        "cur_date": "20261016",
+        "cur_date": "20261019",
         "top_n": 3,
         "matches": [
+          {
+            "date": "20261016",
+            "jaccard": 1.0,
+            "cosine": 1.0,
+            "combined": 1.0,
+            "hit_overlap": [
+              "H6",
+              "L1",
+              "L3",
+              "L6"
+            ],
+            "forward_returns": {
+              "ret_5d": null,
+              "ret_10d": null,
+              "ret_20d": null
+            }
+          },
           {
             "date": "20240823",
             "jaccard": 1.0,
             "cosine": 0.9989,
-            "combined": 0.9995,
+            "combined": 0.9994,
             "hit_overlap": [
               "H6",
               "L1",
@@ -438,39 +455,22 @@
               "ret_10d": null,
               "ret_20d": null
             }
-          },
-          {
-            "date": "20231019",
-            "jaccard": 1.0,
-            "cosine": 0.9984,
-            "combined": 0.9992,
-            "hit_overlap": [
-              "H6",
-              "L1",
-              "L3",
-              "L6"
-            ],
-            "forward_returns": {
-              "ret_5d": -1.49,
-              "ret_10d": -0.17,
-              "ret_20d": 9.84
-            }
           }
         ],
         "window_days": 756,
         "stats": {
-          "avg_ret_5d": -0.28,
-          "avg_ret_10d": -2.34,
-          "avg_ret_20d": 2.67,
+          "avg_ret_5d": 0.92,
+          "avg_ret_10d": -4.51,
+          "avg_ret_20d": -4.51,
           "n_up_10d": 0,
-          "n_down_10d": 2,
-          "n_total_10d": 2
+          "n_down_10d": 1,
+          "n_total_10d": 1
         }
       }
     },
     "human_text": {
       "high": "高位预警指标处于中性区间,暂无明显过热信号,但 H6 均线转弱 有命中,整体加权后未达关注线",
-      "low": "冰点信号密集,关注阶段性机会,留意企稳信号;主要风险来自情绪冰点+位置偏低;历史3次相似特征后10日平均下跌2.34%(涨0次/跌2次),历史统计参考不代表未来必然走势"
+      "low": "冰点信号密集,关注阶段性机会,留意企稳信号;主要风险来自情绪冰点+位置偏低;历史3次相似特征后10日平均下跌4.51%(涨0次/跌1次),历史统计参考不代表未来必然走势"
     },
     "compliance_footer": "⚠️ 本分析基于历史数据统计,仅供学习参考,不构成投资建议或交易指令,市场有风险,决策需谨慎。历史类比仅作统计参考,不代表未来必然走势。",
     "no_data_hint": null
