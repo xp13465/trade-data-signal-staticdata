@@ -3541,14 +3541,14 @@ staticdata 备份仓库 7 个 >20MB JSON(共 ~319MB)已移出 git 跟踪(备份�
 | index/csi_399998-all.json | 405859 | 9312cba63aff1d56abbbef6c95e56be6cc6559a27752c2805ca5fea333e2b215 | `large-json/index/csi_399998-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
 | index/csi_930050-all.json | 428262 | 8d48975b971a8f9d6701a5905b1c386aca75e14dfc811de3463899b76d7701e7 | `large-json/index/csi_930050-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
 | index/csi_930632-all.json | 455416 | 5875b04367d39725ca481889103ae811be22e602d94f1a3282934d4da747e462 | `large-json/index/csi_930632-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
-| index/csi_930713-all.json | 477007 | 9122089fb41a3c6cca440ecec7f39957f4032df810b76795f7fa4b6f34cf51da | `large-json/index/csi_930713-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
+| index/csi_930713-all.json | 477007 | 165e0448538f511d50dad0b0adcad77b5e62c69b3387b8c46137a6510c631f57 | `large-json/index/csi_930713-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
 | index/csi_930721-all.json | 478382 | d4491375ac082d3c1ca820df355664cf4ba498efcb9770dc5b811481aa439522 | `large-json/index/csi_930721-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
 | index/csi_930820-all.json | 580451 | 2524efcfc27454808f59c2293be56e5f8a1223d7be4e27be7b68146b901ef406 | `large-json/index/csi_930820-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
 | index/csi_930851-all.json | 447486 | 6fe527bad0863c279077241806a80148770170dc893316369a9e8916a816b372 | `large-json/index/csi_930851-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
 | index/csi_930986-all.json | 386854 | b96ba935fa91d62989de21afb20fe532f06c7b137edbb9cfe60ff9d5c4de0e91 | `large-json/index/csi_930986-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
 | index/csi_930997-all.json | 385350 | 8455278487a2137f94ffc099198f2dbfb4296b306c4aa10adc6a121ce2eaaee2 | `large-json/index/csi_930997-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
 | index/csi_931151-all.json | 404804 | b7221a2c8858a69caf44bdf0603814266db2816b6be6f06241b9e5a8ada1b100 | `large-json/index/csi_931151-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
-| index/csi_931643-all.json | 222603 | df0605537558dfb30e5845deebeb4cfc40105bb0aa96349deb6288729bb53c28 | `large-json/index/csi_931643-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
+| index/csi_931643-all.json | 222603 | 3e6c24c2d06aa600db95e98d1ce064ee6432eaf49094e0097c8df55165bdef7e | `large-json/index/csi_931643-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
 | index/csi_931719-all.json | 352396 | 6bc56cfc906e57ddf030911464f10eb87c7925f447f49cae08395c1aad32b2b4 | `large-json/index/csi_931719-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
 | index/csi_931752-all.json | 304337 | f11b9a0136a197dc45e8a045ac92d652a68af92b31315555a907cf4c2428e2c7 | `large-json/index/csi_931752-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
 | index/csi_931892-all.json | 368681 | 7d898ca15d53af31be9362b8854d3890f347ae7bcd52b01da7d3bbd07b189fd3 | `large-json/index/csi_931892-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
@@ -3591,7 +3591,7 @@ staticdata 备份仓库 7 个 >20MB JSON(共 ~319MB)已移出 git 跟踪(备份�
 | index/hk_hsmogi-all.json | 425061 | 2c102f95621660476bd2e391b4769b1b34099c603c2385ce374907860853acea | `large-json/index/hk_hsmogi-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
 | index/hk_hsmpi-all.json | 417923 | 0307b2c44196708d234dea321e160517d59248c794b1f0c625bd665569941e41 | `large-json/index/hk_hsmpi-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
 | index/hs300-all.json | 886951 | 754e8b2c1d84995178ff119471cdc94c072c437a15036b9d163a541155c5b7e1 | `large-json/index/hs300-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
-| index/hscei-all.json | 522230 | 2344df1f2b0f17c2488b8c2251aade56f9b1ba7045de01e0eb17cd3a4ddd3462 | `large-json/index/hscei-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
+| index/hscei-all.json | 522230 | b7e47017dd33cadb81e0bac78c74ebd65ef47124fdc1b1dce16bed4ec37d8667 | `large-json/index/hscei-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
 | index/hsi-all.json | 547940 | 95f76cf0c634617f4ffb6d62a376f78f3c4214d32031c876f8b0c6d6432390df | `large-json/index/hsi-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
 | index/hstech-all.json | 242600 | 113dd109393d1da9f78d028f59cef20764808ebe125273ffa4ccd5c2b2494663 | `large-json/index/hstech-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
 | index/kc50-all.json | 322583 | 9f4e364235abdd42e63d412ca991da4c594fc098927f1ce2f85a8a949f2bcc73 | `large-json/index/kc50-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
@@ -3611,9 +3611,9 @@ staticdata 备份仓库 7 个 >20MB JSON(共 ~319MB)已移出 git 跟踪(备份�
 | index/sw_801030-all.json | 652368 | 2c626493107bd2f6260f9fcc1da166085dd9c58bed5e747102fb74478bd63ea1 | `large-json/index/sw_801030-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
 | index/sw_801040-all.json | 629153 | 95a287c06f08114606840e003e9696bad32fe67a254ee5aa9b1526fd1c6579a8 | `large-json/index/sw_801040-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
 | index/sw_801050-all.json | 646570 | 83bf0358d5d7c0cd0df48efb32f77d8cdb15be82b6ef15d37bdae1cdaf518800 | `large-json/index/sw_801050-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
-| index/sw_801080-all.json | 634639 | d8b673da0d663d67bdc717a50e757627279370ab9fc96d7e09c73780633b3976 | `large-json/index/sw_801080-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
+| index/sw_801080-all.json | 634639 | fed5531c0fb6ff88705c762091da0b0d57bf074306637d6deb328acd0735a4d5 | `large-json/index/sw_801080-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
 | index/sw_801110-all.json | 634914 | 7d6fbbc27211c1f6f8143a2d5b36e63a00db8291506e89ac7e31ddce456028ab | `large-json/index/sw_801110-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
-| index/sw_801120-all.json | 658669 | 3aa323e4b81eec36cc95e1954c4bf8c5adb2e35192f8398501f5e4f7a2af9c0c | `large-json/index/sw_801120-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
+| index/sw_801120-all.json | 658669 | 24c80bbf4c38751106cef09daf5b0e13fd5a5aa2f36dc4646074cd7ef4185dbe | `large-json/index/sw_801120-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
 | index/sw_801130-all.json | 643034 | df86bb1619d30dec1ddeaf95d67b5f919fb1321f280f1fc512a772afa2d59626 | `large-json/index/sw_801130-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
 | index/sw_801140-all.json | 658586 | a152da1782699d50b4738adfb733060f0d5c04121a41907c6901963cab9309f0 | `large-json/index/sw_801140-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
 | index/sw_801150-all.json | 672246 | 277c529a5e22bc8653de03e74ee35a7350aaab087ec5c47ae7b553ff7525f35b | `large-json/index/sw_801150-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-22 |
