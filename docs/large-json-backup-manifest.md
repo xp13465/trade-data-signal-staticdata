@@ -150,7 +150,7 @@ staticdata 备份仓库 7 个 >20MB JSON(共 ~319MB)已移出 git 跟踪(备份�
 | accum_nav/159096.json | 610 | cd103f0e419ca4323b44cba9a10e389393fbd669f417a8f519a8bd4a13cb024d | `large-json/accum_nav/159096.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-23 |
 | accum_nav/159098.json | 789 | 4b2279ebd2b3dc80cb53e9fba9c0dcda5f3b9e980f921564c1ca7c7be4effd97 | `large-json/accum_nav/159098.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-23 |
 | accum_nav/159099.json | 986 | bce98e2a446eaf27ef38d1c301e7dfb3c604dcb7c19b1cbab00549cc06bee5a8 | `large-json/accum_nav/159099.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-23 |
-| accum_nav/159100.json | 4094 | 81510639b32976c6bd44523c68f3e745a668d10ca8b0691d22295a250163bd00 | `large-json/accum_nav/159100.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-23 |
+| accum_nav/159100.json | 4112 | 70818d1bc6c392d2773beeaff745f68827b3d55593552aecd25ab99f67f79512 | `large-json/accum_nav/159100.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-23 |
 | accum_nav/159101.json | 4854 | 40856e941e4997b36a6193dd14bec3270c1ef98a4bf66edccf1fbfbb243e8747 | `large-json/accum_nav/159101.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-23 |
 | accum_nav/159102.json | 4695 | e1d5b127b018613e8fb449431de5166990513b934a986e71e15979d1481919ab | `large-json/accum_nav/159102.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-23 |
 | accum_nav/159103.json | 4776 | 409d36355dac551d1a77315f638efcb2d68b4a71b3b16a5b4795cd117fb2b394 | `large-json/accum_nav/159103.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-23 |
@@ -1762,7 +1762,7 @@ staticdata 备份仓库 7 个 >20MB JSON(共 ~319MB)已移出 git 跟踪(备份�
 | accum_nav/589960.json | 4044 | efa67de81f4b4f0e600d04a97d1d7d51d53becb1fa3267af9665ab75e2150816 | `large-json/accum_nav/589960.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-23 |
 | accum_nav/589980.json | 6310 | c9beab68b53ca057bcf8be1df88ad0ffed45afbcced6a13453fbb9113838b054 | `large-json/accum_nav/589980.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-23 |
 | accum_nav/589990.json | 7107 | b31afdb30cbe73f63f5c6a0c06d807b4130b79400d59736059b20d36f3408707 | `large-json/accum_nav/589990.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-23 |
-| accum_nav_map.json | 26585509 | 84fc58ef155f041ec47f4bc5a44c859edcadb62243b03e116db47d410555733d | `large-json/accum_nav_map.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-23 |
+| accum_nav_map.json | 26585527 | febd0ffaf0d8b833900e780952d8abee59efd2b4aa6aa9298d33d6155b9c8804 | `large-json/accum_nav_map.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-23 |
 | etf/158000-all.json | 1536 | 65f587d27bf05731f8f0abfcbb24af0ded4576ab728aef2a6a3c62b9e54816da | `large-json/etf/158000-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-23 |
 | etf/158001-all.json | 1501 | 4c766cde09735d18948f8a7678dd5854c913c686e387acad59b39c8a6c998703 | `large-json/etf/158001-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-23 |
 | etf/158003-all.json | 1721 | 864ac88fe5f89e9fc784836a024f77bc1af85738ab0e3704941ddea48d8d3e53 | `large-json/etf/158003-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-10-23 |
