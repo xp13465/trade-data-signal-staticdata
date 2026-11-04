@@ -3559,7 +3559,7 @@ staticdata 备份仓库 7 个 >20MB JSON(共 ~319MB)已移出 git 跟踪(备份�
 | index/csi_930986-all.json | 389244 | 2de315b9d7288a0e4db6414d8a040efba7aaaa52f9ce493f0bfeaec1232101e3 | `large-json/index/csi_930986-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-04 |
 | index/csi_930997-all.json | 386478 | a01638b3bb90b1baa3d3df341eb54217965b15233d6e8b235f975795c5fb19eb | `large-json/index/csi_930997-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-04 |
 | index/csi_931151-all.json | 405928 | bcdad9dc3fe55bf8aba22780ccb8602c7d2243ba068940f36dfec97c96daa446 | `large-json/index/csi_931151-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-04 |
-| index/csi_931643-all.json | 223684 | b829187d466d19b4c1014b3a2cdd9867428b31899930d8f022c2f304a716cf3c | `large-json/index/csi_931643-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-04 |
+| index/csi_931643-all.json | 223684 | 05d017cf637c13fb0cb80d1df8f7be844c46c1062ab9f15c376d5f2f7a4ec0d5 | `large-json/index/csi_931643-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-04 |
 | index/csi_931719-all.json | 353721 | fd439fc43f5fa7694ab19fcb151787b721ade4f3ca7ce28cb8366707d049b0a8 | `large-json/index/csi_931719-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-04 |
 | index/csi_931752-all.json | 305777 | 5fb7f4c81608f78d07ba307028252eed8e9f83501c6585835917607d5c0fb066 | `large-json/index/csi_931752-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-04 |
 | index/csi_931892-all.json | 369926 | e4bfb12648620c75171c1e250dbbc5b9e982ac987133acb0885524e05be6e8bb | `large-json/index/csi_931892-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-04 |
@@ -3646,15 +3646,15 @@ staticdata 备份仓库 7 个 >20MB JSON(共 ~319MB)已移出 git 跟踪(备份�
 | index/sw_801880-all.json | 496703 | 990ba849f2c6f955a977be0812615c14ca1d794e8bbda165c38e5d492a4e4f37 | `large-json/index/sw_801880-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-04 |
 | index/sw_801890-all.json | 496811 | eb7e46a417189a5296c294241b94c24895c96f78d57489b2ce70d98faa251fa5 | `large-json/index/sw_801890-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-04 |
 | index/sw_801950-all.json | 461603 | 9b356e76ba02dcb0c7361ab6fc48b362db9b7a16ac8b4936e6d3677d588a601d | `large-json/index/sw_801950-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-04 |
-| index/sw_801960-all.json | 193891 | 32bd460ab4d4b15a60b8d524d606254665c3f3f868c8668e0cc396ecbcf94d28 | `large-json/index/sw_801960-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-04 |
+| index/sw_801960-all.json | 193891 | 6f29920187602e11bdb1c6d3ea9837267f1102c88d8dd1913fe8ed13e2e995f1 | `large-json/index/sw_801960-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-04 |
 | index/sw_801970-all.json | 192392 | cafbbfe491ff24e0cc97d55a3b21066c0e89d123c4431158df7a80fa3876e59d | `large-json/index/sw_801970-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-04 |
 | index/sw_801980-all.json | 181661 | cfdec784a8baea26eca20a7600113cacdbe4627bb3e3cf26311787e05d14c3bf | `large-json/index/sw_801980-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-04 |
 | index/sz-all.json | 828290 | ebe784a17a2436d874f91d6b91a17a2c2a7cebd6ab6b077e07ebfe4bc04645f0 | `large-json/index/sz-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-04 |
 | index/sz50-all.json | 791100 | 0f31a83584c0d64a4f513165ce6576850948ab59b1cd1dc84ed5e0d9b028283e | `large-json/index/sz50-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-04 |
 | index/sz_div-all.json | 634499 | e4eaadd204b945968525c2c1356bd8eb4b30ac54d69e6619a6c5b0891cd11cba | `large-json/index/sz_div-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-04 |
 | index/thsc_300008-all.json | 285198 | 6a6e47316434467e874d8ef4da7677ad5fab22354fcffe66edceb826fe8168b4 | `large-json/index/thsc_300008-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-04 |
-| index/thsc_300082-all.json | 283313 | ac95134b9790e174fd4fc01d95bda95c31035aff190c54d5930971a83440c5ae | `large-json/index/thsc_300082-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-04 |
-| index/thsc_300733-all.json | 284590 | b428d64cb96e9ec0e7541382a65eb6d5dd5550e83e96d03043acaace29c73005 | `large-json/index/thsc_300733-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-04 |
+| index/thsc_300082-all.json | 283313 | 2ccf85e82029ab9f00bfd0c350a1abac6fae0675c6acdf01a0c030de7f7714ec | `large-json/index/thsc_300082-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-04 |
+| index/thsc_300733-all.json | 284590 | 3346cdfd6d17effdc4c08b303adbb68f6541ba75be13d3e602b6794ca274c6e7 | `large-json/index/thsc_300733-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-04 |
 | index/thsc_300816-all.json | 287956 | b260b5a8b71c812c6da35adadb802439471403d10a3e5e69e742a8c31d0aaf14 | `large-json/index/thsc_300816-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-04 |
 | index/thsc_300830-all.json | 276737 | 1ed3f7d66c9d275df47d84810000f9e75e1a30eb2d9c47789e477efd6f9d1b95 | `large-json/index/thsc_300830-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-04 |
 | index/thsc_301079-all.json | 281451 | 78e6c76111fce9780c6c8eaf631f4f58e76b8242f0c0635f425e2af42c9fbefc | `large-json/index/thsc_301079-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-04 |
