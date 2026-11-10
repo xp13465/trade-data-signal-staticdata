@@ -3844,7 +3844,7 @@ staticdata 备份仓库 7 个 >20MB JSON(共 ~319MB)已移出 git 跟踪(备份�
 | nav_bucket/59.json | 1845922 | 1447de6626dec18aeca7a0087816eb93dda02ce54582467806c7eecab11c2fc3 | `large-json/nav_bucket/59.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-11 |
 | nav_bucket/5a.json | 2099059 | e0633de35c0d095f122ae0ae9e01470724d65f0e35e3549583f7404431d8f103 | `large-json/nav_bucket/5a.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-11 |
 | nav_bucket/5b.json | 2236743 | 0096a08e5a9eff512b9fca09d720f4f1523b53794478c2b59f8046a63c7d2602 | `large-json/nav_bucket/5b.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-11 |
-| nav_bucket/5c.json | 2185129 | 106e6336aa41135ce1e8573f2655ea9e86b3329235c9c13d851b2308267f7447 | `large-json/nav_bucket/5c.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-11 |
+| nav_bucket/5c.json | 2185156 | 1252ee69a09f7a351cf77707de1fe30ffdcc213cb56f6f926b535e29aa0b32b0 | `large-json/nav_bucket/5c.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-11 |
 | nav_bucket/5d.json | 2334124 | bc9792d553c0f1d1e2d71ebe68892859303b962679f6eb89992dfb7a7489246d | `large-json/nav_bucket/5d.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-11 |
 | nav_bucket/5e.json | 1961062 | 965500d91abae0aaa221eb1e5e763e0030f2eb79249f299b615f8cd5f8f7a275 | `large-json/nav_bucket/5e.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-11 |
 | nav_bucket/5f.json | 1948710 | de539b30b03676d090cae1fa642acee726ab8647d3d06da6814267660a3f5cd6 | `large-json/nav_bucket/5f.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-11 |
