@@ -3622,7 +3622,7 @@ staticdata 备份仓库 7 个 >20MB JSON(共 ~319MB)已移出 git 跟踪(备份�
 | index/s.sentiment_sz50-all.json | 52456 | 44fa0e56f3023fe767c0939848ffffe6f1d42cc37b389ebe9ba83ba96a3f951d | `large-json/index/s.sentiment_sz50-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-11 |
 | index/sh-all.json | 806312 | 4059954a1f481f5de718c7c938939ae95ef1f37f7e013d064ccb5f647c2925b2 | `large-json/index/sh-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-11 |
 | index/sse_000685-all.json | 249748 | fe524f72cf4bfffc9f1454f34ec792c03b699fdd6a2ed70e717c1c089c678102 | `large-json/index/sse_000685-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-11 |
-| index/sw_801010-all.json | 630647 | 49c3df782b1bee522f7aca56cd6ef72a9bf860fc5e10a4b86c3f9090459eda23 | `large-json/index/sw_801010-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-11 |
+| index/sw_801010-all.json | 630647 | 91d0e72aed98f7449e5853c3bc4c3ba17c3182b8f08c57937352c7f502550c7a | `large-json/index/sw_801010-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-11 |
 | index/sw_801030-all.json | 654441 | 2e4aad1eaa37fad5542b4dea464c1776e311ed952678c47ddc7e0b50128f1eeb | `large-json/index/sw_801030-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-11 |
 | index/sw_801040-all.json | 631285 | 381b25e4c5684cc65dceaebeca61db9bb5ebc885d41661c803dd20ac6746aa05 | `large-json/index/sw_801040-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-11 |
 | index/sw_801050-all.json | 648514 | ce797f40a69f26081a8699f41eb4fc956a0ea5882a3eedad1bfe1528b8beeb3c | `large-json/index/sw_801050-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-11 |
