@@ -157,7 +157,7 @@ staticdata 备份仓库 7 个 >20MB JSON(共 ~319MB)已移出 git 跟踪(备份�
 | accum_nav/159096.json | 861 | 7bdd15f477153f4e628eee75ca3dfb5b298394f184fb93953b5acd9d5ed7543b | `large-json/accum_nav/159096.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-12 |
 | accum_nav/159098.json | 1038 | cf6a1274743769a08b93f8c17e7e590498530cc561569d12d15f88c692a92b16 | `large-json/accum_nav/159098.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-12 |
 | accum_nav/159099.json | 1236 | 0cec9197079d75460e53b1baca525f6a487c7f81ae0fea4fbc619cece4582529 | `large-json/accum_nav/159099.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-12 |
-| accum_nav/159100.json | 4344 | 5b9af7c2fa129236c0e30f2309352515341c3a78f0622710679da612b80e8ed2 | `large-json/accum_nav/159100.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-12 |
+| accum_nav/159100.json | 4362 | 09875ea632b92ec48df9d9c37b6402a7c9debc8ddd24a6b2bbb3370bdf31b4da | `large-json/accum_nav/159100.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-12 |
 | accum_nav/159101.json | 5106 | f6b713d521550fe38ad660fd51ad3d9e5c7280c6f88f885e5bd6e9432468aab7 | `large-json/accum_nav/159101.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-12 |
 | accum_nav/159102.json | 4944 | 3a9bbfc246cdba5095424aff52b398454341116b1436762f61c828150c26407d | `large-json/accum_nav/159102.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-12 |
 | accum_nav/159103.json | 5026 | b1bfb3fbeb4a77e5b86b2e461c73492d9bc2d50ad06f81ccd06ba128f1e852a8 | `large-json/accum_nav/159103.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-12 |
@@ -1060,7 +1060,7 @@ staticdata 备份仓库 7 个 >20MB JSON(共 ~319MB)已移出 git 跟踪(备份�
 | accum_nav/513260.json | 18029 | cd30768d23c236ade3baf9fb5e69a9753921df96ba68c61dee482850391d7c70 | `large-json/accum_nav/513260.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-12 |
 | accum_nav/513280.json | 18763 | 546c54e987a8c9c23f6d9f9f18981eaa691296d7123fe668d68954a9f05252f2 | `large-json/accum_nav/513280.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-12 |
 | accum_nav/513290.json | 18302 | 7ae96804a01bfb496372ae37642964528f3449be2cefab7b1d34a41af03e6eb4 | `large-json/accum_nav/513290.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-12 |
-| accum_nav/513300.json | 26210 | 2091ffdbc263302d278136c96decd05ffe8ed6d24c4a9d1fe230581adca0b7cc | `large-json/accum_nav/513300.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-12 |
+| accum_nav/513300.json | 26227 | fbc2b7a93ef844f8da1ecf8037e4c26b2c889f8a3474c7b5b162261a7579990c | `large-json/accum_nav/513300.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-12 |
 | accum_nav/513310.json | 4111 | dc270492af3012dfcb07526e170272fdef1649cb8ec9dfc4064135dfc1085299 | `large-json/accum_nav/513310.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-12 |
 | accum_nav/513320.json | 20168 | 5d7af2b3f0246f8ec9e75ca6a52638784f885d657827f2be0971dbb4aeecf528 | `large-json/accum_nav/513320.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-12 |
 | accum_nav/513330.json | 24912 | 6539c702f7abe8c0a40fca70e69ef8d158fcd663c1c9dc7b8cca6e5da97e7e77 | `large-json/accum_nav/513330.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-12 |
@@ -1770,7 +1770,7 @@ staticdata 备份仓库 7 个 >20MB JSON(共 ~319MB)已移出 git 跟踪(备份�
 | accum_nav/589960.json | 4294 | b6191752da62375f9d7f39121e20cd330a733f2c439787125d6e086036446131 | `large-json/accum_nav/589960.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-12 |
 | accum_nav/589980.json | 6558 | 551436e8ec12ce4dccf448317c9f779206e7c502e974ca91dc640f5b2012de08 | `large-json/accum_nav/589980.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-12 |
 | accum_nav/589990.json | 7355 | 172c612fa573ea16b5284e7f077a1f9d1bcc5ffadae793da0f5f25431b0c9a75 | `large-json/accum_nav/589990.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-12 |
-| accum_nav_map.json | 26996753 | bfb834679e2b790cbbf230b72c24418b8970294590c89ee228c891c5e33f0d6d | `large-json/accum_nav_map.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-12 |
+| accum_nav_map.json | 26996788 | 9bb49aeca4c4fd6aafc9007d599d176106acf42f226f525fde297359c9e4aa11 | `large-json/accum_nav_map.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-12 |
 | etf/158000-all.json | 2044 | dfcf4003d0e0bacda08dafc9176bf944acb9fc9aa59b49bb6fae247185cbd000 | `large-json/etf/158000-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-12 |
 | etf/158001-all.json | 2012 | 9488f5791ea992ec3539ae962f35ce1d31fc23cd532c02dc94405ba71db7f423 | `large-json/etf/158001-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-12 |
 | etf/158003-all.json | 5037 | 39662dc1a71acec3c66550f08ca1e039057c344eecd3846e1a991676cde7380a | `large-json/etf/158003-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-12 |
