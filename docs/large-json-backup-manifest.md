@@ -3523,9 +3523,9 @@ staticdata 备份仓库 7 个 >20MB JSON(共 ~319MB)已移出 git 跟踪(备份�
 | index/cgb_idx-all.json | 1340001 | 2743c29709af42ee346d3940e3cafb76cab3e6c6a8c46c040e218b4a28fc517c | `large-json/index/cgb_idx-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
 | index/csi1000-all.json | 572322 | 5b244457a301b83a5bf2c7a4e3118448ae218bbc2be09542c3ec1c57d77fc681 | `large-json/index/csi1000-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
 | index/csi500-all.json | 825471 | ecc278dcdd8c063f1c595a9cd22c8caf77a33bf22d311d2f1a63886d9c35a22e | `large-json/index/csi500-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
-| index/csi_000010-all.json | 621363 | 17f55a10d5a2daaf0375e96707890dfc6f26e538eee8384b4ce456581e1c99f1 | `large-json/index/csi_000010-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
+| index/csi_000010-all.json | 621363 | 91f39bd5aea1a8d69ca21fd7691fc33d291c5ba4c61b17587b9df0f67ff08653 | `large-json/index/csi_000010-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
 | index/csi_000102-all.json | 603681 | 93d498b8fdee3e63edab343deebaff4e11fa7ce79db1b6d7f13023d9a2ef5364 | `large-json/index/csi_000102-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
-| index/csi_000330-all.json | 626541 | 92e850f51aff1eab917aa72d52e9e3df8d9861b2158bb94870a48361a9027387 | `large-json/index/csi_000330-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
+| index/csi_000330-all.json | 626541 | e580e8513ba3c8883573783af4de021c4185b0abe214d0527361c6d349b1dd2e | `large-json/index/csi_000330-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
 | index/csi_000510-all.json | 646622 | a655ffed2a52f2c93d0fd74ffdf4a930e90ed616e4a328d81d528db63a52fd84 | `large-json/index/csi_000510-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
 | index/csi_000673-all.json | 454419 | 781cbf69f69620de73df77351fd99d0e16452b8f5265f583a6d4f4528c4deb82 | `large-json/index/csi_000673-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
 | index/csi_000680-all.json | 254263 | 175f0e95b28cce28f675d66fac7f58c4cfe7a5b2b05daf4fab79144a5b63c356 | `large-json/index/csi_000680-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
@@ -3552,7 +3552,7 @@ staticdata 备份仓库 7 个 >20MB JSON(共 ~319MB)已移出 git 跟踪(备份�
 | index/csi_399986-all.json | 407335 | 02b497ea61dfe47a31487568d68508d07f3fe66d57cf062e5b08b55766bc5998 | `large-json/index/csi_399986-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
 | index/csi_399989-all.json | 413703 | 550f8e57f26c8eb3eefe31109fd04715bc760615c0dee7c81c37fd66f65ca079 | `large-json/index/csi_399989-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
 | index/csi_399991-all.json | 422020 | a1e1b9988642ed77d30ffb0bf69236ff6c1b476c17ddd7ffc3c948dc5d7c549d | `large-json/index/csi_399991-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
-| index/csi_399994-all.json | 412983 | dd6899b058d5c12617a5e44428edd4c57182683a44bf1bfb8a58a5733df7452e | `large-json/index/csi_399994-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
+| index/csi_399994-all.json | 412983 | 6bd5dbf5013820cec6b5d37607a3f1839d3f6e3b2ed9aff7e71a4defd85a1636 | `large-json/index/csi_399994-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
 | index/csi_399995-all.json | 404540 | 38a75cdf011fbbdb9306abb6a608a8d80b0f80b74616814a1c5254f5cfa13dea | `large-json/index/csi_399995-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
 | index/csi_399996-all.json | 415889 | 5d88cc307ca250a32ec299ba75ce660b6ab5d708d7b3ec7d34837ea42c8a3402 | `large-json/index/csi_399996-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
 | index/csi_399998-all.json | 402450 | 0b074959738dc7a68d61846f2adcc28015a2277975644e9ee16aff76dab69dbb | `large-json/index/csi_399998-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
@@ -3607,7 +3607,7 @@ staticdata 备份仓库 7 个 >20MB JSON(共 ~319MB)已移出 git 跟踪(备份�
 | index/hk_hsmbi-all.json | 432856 | 46d8d56388f9230f3650a000759d4957a077e2e0ee76b05506e4ce93f3ccde10 | `large-json/index/hk_hsmbi-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
 | index/hk_hsmogi-all.json | 421337 | ff360b0a8d637240427672e551f43484e1402f8948691b8b1d88445469f79c60 | `large-json/index/hk_hsmogi-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
 | index/hk_hsmpi-all.json | 414636 | 8bb9367d6e87e434a88176df8b2d69751e6ba075a5e464bca8532136550d375d | `large-json/index/hk_hsmpi-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
-| index/hs300-all.json | 879275 | 5600d3c9b5749f912acfee9c8f6a9efe129299b3b81a4ce5de120ce3176176db | `large-json/index/hs300-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
+| index/hs300-all.json | 879275 | 35f8bcf7248e28e3ae02a6a6f9677a556fd6460b7947aefc6f8e3f9364ce965b | `large-json/index/hs300-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
 | index/hscei-all.json | 516388 | 6c458eadada85e00f09841b6b77290c032fd477d53b0e06132b86c14fa9a1167 | `large-json/index/hscei-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
 | index/hsi-all.json | 540696 | 3bf3fdb1aac87e3ef4df62485fd4c720b55d93b7af7f4cacaf3805f4923ed281 | `large-json/index/hsi-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
 | index/hstech-all.json | 242226 | fe0e770231c104ee5650caee578e15c0ca10687ec3e5ff7d37684696929105b0 | `large-json/index/hstech-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
@@ -3624,7 +3624,7 @@ staticdata 备份仓库 7 个 >20MB JSON(共 ~319MB)已移出 git 跟踪(备份�
 | index/s.sentiment_sz50-all.json | 52456 | 44fa0e56f3023fe767c0939848ffffe6f1d42cc37b389ebe9ba83ba96a3f951d | `large-json/index/s.sentiment_sz50-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
 | index/sh-all.json | 794978 | d4f3b7903e45af3ecb7eb09e73a2871d85c38a3273ef7295f90c67d12449c7f9 | `large-json/index/sh-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
 | index/sse_000685-all.json | 247054 | 2d52e6bbeb3786fa88383a2a9c40a6abc912701b65f1696813f7e2f0b396fbd2 | `large-json/index/sse_000685-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
-| index/sw_801010-all.json | 623062 | ebdeef1bb5b5df95648782ff02af1395417dc8d8fac2df155c65f85b34459ef4 | `large-json/index/sw_801010-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
+| index/sw_801010-all.json | 623062 | 45b4cb853003fc294b29a8e5daa6eb10573015dd173ce96688c1bf4d79279879 | `large-json/index/sw_801010-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
 | index/sw_801030-all.json | 643862 | aaba10ae201c178e6104ffa2b2a5096efeba7e8474fe0173ad402a110fc69df4 | `large-json/index/sw_801030-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
 | index/sw_801040-all.json | 622344 | 7013e407f36baab9a4876e194abcef16a89d200c28c42bbbf24d0dc220e28686 | `large-json/index/sw_801040-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
 | index/sw_801050-all.json | 638870 | e1de2b41223fc873a99722be836cc545cf8766a1eb15775ed2134e7e23a3b489 | `large-json/index/sw_801050-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
@@ -3641,11 +3641,11 @@ staticdata 备份仓库 7 个 >20MB JSON(共 ~319MB)已移出 git 跟踪(备份�
 | index/sw_801210-all.json | 628166 | dee27125b4ab4e0a61db2ef2518e98d16de139f9feddb3df658b79afd06c97eb | `large-json/index/sw_801210-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
 | index/sw_801230-all.json | 640002 | 959e4deeffa457e5f8f2ebcc76437653d8789a385bab9c66ab42c24aa42e705c | `large-json/index/sw_801230-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
 | index/sw_801710-all.json | 481540 | d39297a4979d707a6a7e888014107be807a58a53043394c6fd952330848e85cf | `large-json/index/sw_801710-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
-| index/sw_801720-all.json | 482040 | c61192d1150e7d66ac3eb101dd8b88b0580d1268286d25cc3abc4006881b693f | `large-json/index/sw_801720-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
+| index/sw_801720-all.json | 482040 | 8c764871a0dfa185f8c57e1de091131fea4faaf69e1ce424b02f3a81fcc29f17 | `large-json/index/sw_801720-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
 | index/sw_801730-all.json | 486283 | bca5be34b3557ee5008b9bfff9cc71d20def3376eb66ef219dd5f8ac58c0c993 | `large-json/index/sw_801730-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
 | index/sw_801740-all.json | 459301 | 0d5601d25a91e4f563bc82559e1f70de8b1978c807228d3b3ef0fbe66e3c1a1a | `large-json/index/sw_801740-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
 | index/sw_801750-all.json | 481574 | e400f6a6f029bad61bc4c7fb89dbf7aa76fc0daa527079009a2b574ae0815034 | `large-json/index/sw_801750-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
-| index/sw_801760-all.json | 456532 | 6bd1ec146ac73b731778c32916f08651487758fb30add0289a6aa38cde966577 | `large-json/index/sw_801760-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
+| index/sw_801760-all.json | 456532 | dee68f3f9858c70988a7c4af02847d529eeaf25266c0cf30e52a4cbfe35cbacb | `large-json/index/sw_801760-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
 | index/sw_801770-all.json | 472168 | 64897394b7109c3c8fe364222c623f9678c987c3cd6baf5d43e70d6bd4d96c0e | `large-json/index/sw_801770-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
 | index/sw_801780-all.json | 470367 | 9e6ee18a333285dbb4757588845aa653dc87a458e05ac2645f2065e38924bde5 | `large-json/index/sw_801780-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
 | index/sw_801790-all.json | 468403 | 0f5a950fec5ae395a328b6926a333b03eae73870def75ae34f76cec92fb1c4c2 | `large-json/index/sw_801790-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
@@ -3659,7 +3659,7 @@ staticdata 备份仓库 7 个 >20MB JSON(共 ~319MB)已移出 git 跟踪(备份�
 | index/sz50-all.json | 782659 | 2506ef3027b2a6cfd1706ee68f1b03afeba15f2862f9548216a545bc936f7cab | `large-json/index/sz50-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
 | index/sz_div-all.json | 624931 | fd8954c21863f07103b544fc750e79e0adbddee566e0d4bc7354e794c1d48211 | `large-json/index/sz_div-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
 | index/thsc_300008-all.json | 281098 | 213d6dcfefd63f5eb632b42550a6feb63265e639de190d198e649a17386bbbfe | `large-json/index/thsc_300008-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
-| index/thsc_300082-all.json | 279175 | 524e34db564173c436e50c07e2a981596d9e63025086d681a59819a213ffa6ba | `large-json/index/thsc_300082-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
+| index/thsc_300082-all.json | 279175 | bbf0a2707159bdac6f169fab0ce96d6ee4952da8409d99a2f1fd85b31891bd49 | `large-json/index/thsc_300082-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
 | index/thsc_300733-all.json | 281397 | 784f8096683588973e5afddedf95afc7146c4bd599ab78306f9716a8af12059f | `large-json/index/thsc_300733-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
 | index/thsc_300816-all.json | 283557 | f2423b98fe834796b8a6a422441c7a62e09498647dbf29acbb3b1df8daa2409a | `large-json/index/thsc_300816-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
 | index/thsc_300830-all.json | 272746 | 055be4be385136f1bc9d9602d5633c76f43cad2d2d54b189e55a833e28788d83 | `large-json/index/thsc_300830-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-13 |
