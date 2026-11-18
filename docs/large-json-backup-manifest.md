@@ -3630,7 +3630,7 @@ staticdata 备份仓库 7 个 >20MB JSON(共 ~319MB)已移出 git 跟踪(备份�
 | index/sw_801030-all.json | 644404 | 1cdb3d8c3c564d871706448fc12f07772112ec72c8302d1c977751d88f5d1d07 | `large-json/index/sw_801030-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-19 |
 | index/sw_801040-all.json | 622742 | f664fdac9b5be4f9bcf13030802673bb77164ef6c24bb6860d68817ae6daea8b | `large-json/index/sw_801040-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-19 |
 | index/sw_801050-all.json | 639288 | e461de467a29220a4b742e890e05c8c3a34428ce3eddcdd538e9fd959023ea8c | `large-json/index/sw_801050-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-19 |
-| index/sw_801080-all.json | 629061 | 244f88115457cb536b12cdc8750c12b2a80f04301f6ebb471dad4339439900f1 | `large-json/index/sw_801080-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-19 |
+| index/sw_801080-all.json | 629061 | a41dddc774bd8bb79f341098eddae7d52388a48e654fc4d23d29496f39351fe4 | `large-json/index/sw_801080-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-19 |
 | index/sw_801110-all.json | 628993 | 352f6aa8527dde7fe9c8f2be0d422584202aa427d1adbb365cd39bfcd3107d76 | `large-json/index/sw_801110-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-19 |
 | index/sw_801120-all.json | 650457 | 2d984f3b5a9df499bec6b29afda3f3222d97ad7ec9de22b2276effe0533e628c | `large-json/index/sw_801120-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-19 |
 | index/sw_801130-all.json | 635445 | 2b3316a9e949d011ef07675121bef4e0396b6322b84e120907bf140b6cc79a00 | `large-json/index/sw_801130-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-19 |
