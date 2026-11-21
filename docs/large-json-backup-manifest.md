@@ -3671,7 +3671,7 @@ staticdata 备份仓库 7 个 >20MB JSON(共 ~319MB)已移出 git 跟踪(备份�
 | index/thsc_300830-all.json | 273577 | 94f39e07659b5c25ed514f4196e0002924c991efe52a5633778199eb96332f9c | `large-json/index/thsc_300830-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-22 |
 | index/thsc_301079-all.json | 278692 | 0383b3dd32a19659a82adce361c52bc438ae29a8155a4219411887510336bbee | `large-json/index/thsc_301079-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-22 |
 | index/thsc_301085-all.json | 282644 | 21ec8fe0b6e48ee5a4c7db3f5a880caa92defa7b93bc43e14112f4ddbb6e271d | `large-json/index/thsc_301085-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-22 |
-| index/thsc_302035-all.json | 282251 | d55b2f78aae7fd4eec54d7be6b7b2676f9e01971143ec919aac54cda36517b59 | `large-json/index/thsc_302035-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-22 |
+| index/thsc_302035-all.json | 282338 | 1de0cac033a24939e5de4aa171521ffa4b4fbc0374a28b53090e80a8eaa400da | `large-json/index/thsc_302035-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-22 |
 | index/thsc_306380-all.json | 225545 | 813a802ace70dbb04f10b0181904ab50d50db0a687940822571575991b3268f1 | `large-json/index/thsc_306380-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-22 |
 | index/thsc_307940-all.json | 140641 | 024bbe272b326268053a7a7dbf7f8136fff968bdfc7e7024fffae65108825a51 | `large-json/index/thsc_307940-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-22 |
 | index/thsc_308014-all.json | 172739 | c6206a357b25b3733e1245ac073983ae75f5686d63a7d233c3bccec2202bfade | `large-json/index/thsc_308014-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-22 |
@@ -3691,10 +3691,10 @@ staticdata 备份仓库 7 个 >20MB JSON(共 ~319MB)已移出 git 跟踪(备份�
 | index/thsc_309115-all.json | 119745 | fa5296a2360b7fb00e5fdc8928b096ea47da20143de7de44c5def4bdd737b0b0 | `large-json/index/thsc_309115-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-22 |
 | index/thsc_309119-all.json | 116023 | 96240acfe59a727f0a3933910d582ba3f4a8df90e621f14e21427bc72547d5de | `large-json/index/thsc_309119-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-22 |
 | index/thsc_309128-all.json | 106492 | 84ab08e72bdddf02ccd23167579a451bd1d3c9b0353f158d7c111c5390f56398 | `large-json/index/thsc_309128-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-22 |
-| index/us_dji-all.json | 742617 | 1bb1e980f25ad33b489bf8b05e3bfd5b7a2ed66c739428521a33b6aaeaf13a17 | `large-json/index/us_dji-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-22 |
-| index/us_ixic-all.json | 742179 | 3c764c3db918f459d9da9caec233afd5742178dcdfe83b61094e9dc0d550bb5f | `large-json/index/us_ixic-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-22 |
-| index/us_ndx-all.json | 552718 | b8dd3d5ab858f8932424bb4ec6d6a4728e83893b7383986bc3e5400576a9bfe3 | `large-json/index/us_ndx-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-22 |
-| index/us_spx-all.json | 725178 | 2b296c35fa3919f2addd983178156e611be243d16667cc86bace47297367fcf8 | `large-json/index/us_spx-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-22 |
+| index/us_dji-all.json | 742617 | 208371e0529edbb713ba51620be6aa40f9ae9788d0f2c643719984c062f775b0 | `large-json/index/us_dji-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-22 |
+| index/us_ixic-all.json | 742180 | 155821e8da71c50c834c8354908637fad20dc6d5f0418e5f2e900bcbc8057c12 | `large-json/index/us_ixic-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-22 |
+| index/us_ndx-all.json | 552719 | 117ad9daa274cae878a0fcfab94ae0fa749b041896fde3316dbe352407dd0f9e | `large-json/index/us_ndx-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-22 |
+| index/us_spx-all.json | 725178 | 69517cdd53fe275daa3bb93f14cfdc1da5df1a2bca25e73634f0819a04ca6203 | `large-json/index/us_spx-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-22 |
 | lab/lab_backtest.json | 65516 | ed0dad4fa83a5ed6732c2a244d7d2527d17b46cdbfb0e77430367b5bdbf8aaa7 | `large-json/lab/lab_backtest.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-22 |
 | lab/lab_backtest_bj50.json | 26230 | aae94cfd4264218221a7af4abdf1c77b41b58ddf31cf701dd396f2d6857a0e13 | `large-json/lab/lab_backtest_bj50.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-22 |
 | lab/lab_backtest_csi1000.json | 26498 | 49f31fd3719269f1cf90e45625bf8d11dc160aa9bdc8006e18a500f983c0b5cc | `large-json/lab/lab_backtest_csi1000.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-22 |
