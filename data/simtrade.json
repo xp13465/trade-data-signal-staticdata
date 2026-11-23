@@ -1,11 +1,11 @@
 {
  "schema_version": 1,
- "generated_at": "2026-11-21T11:54:53+08:00",
+ "generated_at": "2026-11-23T22:55:00+08:00",
  "source": {
   "db": "sim_trade.db",
-  "db_exists": false,
-  "status": "missing",
-  "note": "账本尚未建立, 等待首个触发器运行"
+  "db_exists": true,
+  "status": "ok",
+  "note": null
  },
  "positions": [],
  "trades": [],
@@ -14,10 +14,134 @@
   "total": 0,
   "limit": 200
  },
- "summary": null,
+ "summary": {
+  "calc": {
+   "caliber": "calc",
+   "capital_from": "signal",
+   "include_marks": false,
+   "n": 0,
+   "n_total_signals": 1,
+   "n_open": 1,
+   "marks": 0,
+   "win_rate": 0.0,
+   "avg_win": 0.0,
+   "avg_loss": 0.0,
+   "payoff_ratio": null,
+   "total_profit": 0.0,
+   "max_concurrent_capital": 0.0,
+   "rmh": 0.0,
+   "dd_pct": 0.0,
+   "annualized_pct": 0.0,
+   "span_days": 0,
+   "recent_50": []
+  },
+  "real": {
+   "caliber": "real",
+   "capital_from": "signal",
+   "include_marks": false,
+   "n": 0,
+   "n_total_signals": 1,
+   "n_open": 1,
+   "marks": 0,
+   "win_rate": 0.0,
+   "avg_win": 0.0,
+   "avg_loss": 0.0,
+   "payoff_ratio": null,
+   "total_profit": 0.0,
+   "max_concurrent_capital": 0.0,
+   "rmh": 0.0,
+   "dd_pct": 0.0,
+   "annualized_pct": 0.0,
+   "span_days": 0,
+   "recent_50": []
+  },
+  "counts": {
+   "signals": 1,
+   "closed": 0,
+   "open": 0,
+   "no_fill": 1
+  }
+ },
  "backfill": {
   "available": false,
   "reason": "未配置回填对照库(--backfill-db)"
  },
- "runs": []
+ "runs": [
+  {
+   "date": "20261123",
+   "stages": [
+    {
+     "stage": "signal",
+     "ran": true,
+     "inserted": 1,
+     "ignored": 0,
+     "stats": {
+      "date": "20261123",
+      "ignored": 0,
+      "inserted": 1,
+      "rows": 1,
+      "skipped": 0,
+      "stage": "signal",
+      "superseded": 0
+     },
+     "source": "event",
+     "at": "2026-11-23T22:45:00+08:00"
+    },
+    {
+     "stage": "buy_fill",
+     "ran": true,
+     "inserted": 0,
+     "ignored": null,
+     "stats": {
+      "confirmed_existing": 0,
+      "date": "20261123",
+      "fill_failed": 0,
+      "fills": 0,
+      "orders": 0,
+      "signals": 0,
+      "skipped": 0,
+      "stage": "buy_fill",
+      "superseded": 0
+     },
+     "source": "event",
+     "at": "2026-11-23T09:50:00+08:00"
+    },
+    {
+     "stage": "sell_order",
+     "ran": true,
+     "inserted": null,
+     "ignored": null,
+     "stats": {
+      "date": "20261123",
+      "fills": 0,
+      "no_price": 0,
+      "orders": 0,
+      "positions": 0,
+      "skipped": 0,
+      "stage": "sell_order"
+     },
+     "source": "event",
+     "at": "2026-11-23T14:55:00+08:00"
+    },
+    {
+     "stage": "settle",
+     "ran": true,
+     "inserted": null,
+     "ignored": null,
+     "stats": {
+      "buy_backfill_failed": 0,
+      "buy_backfilled": 0,
+      "buy_confirmed": 0,
+      "date": "20261123",
+      "no_bar": 0,
+      "sell_settled": 0,
+      "skipped": 0,
+      "stage": "settle"
+     },
+     "source": "event",
+     "at": "2026-11-23T22:50:00+08:00"
+    }
+   ]
+  }
+ ]
 }
