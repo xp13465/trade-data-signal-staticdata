@@ -3619,7 +3619,7 @@ staticdata 备份仓库 7 个 >20MB JSON(共 ~319MB)已移出 git 跟踪(备份�
 | index/csi_932365-all.json | 354707 | c5f6b287730070d8deacacd1fe736c0fcfd0e996c393709ff35eec3687deaf83 | `large-json/index/csi_932365-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-25 |
 | index/csi_932456-all.json | 194224 | 43b58c0f931756cfdd6988605e78dd3e9c170f13849197e1929baa09adb6599a | `large-json/index/csi_932456-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-25 |
 | index/csi_970070-all.json | 75318 | 8001630c4a9ede97cfaa0b8b849d337830f15b356995f2da402a9abcda142dd2 | `large-json/index/csi_970070-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-25 |
-| index/csi_H11059-all.json | 515171 | bbc63d3fd60050928dc85e5b3f7fcb92568cc83dd3a2a41421165b3c699ec741 | `large-json/index/csi_H11059-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-25 |
+| index/csi_H11059-all.json | 515171 | 76954b5f18366f73c3830c14107ea62599739f0ddf7c903cb014f300c0ed66f2 | `large-json/index/csi_H11059-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-25 |
 | index/csi_H30199-all.json | 499833 | 566c064420c3a06b8dbb1fa8d97880e4ba18206f1ea105e8decd4831a2e3c6d3 | `large-json/index/csi_H30199-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-25 |
 | index/csi_H30535-all.json | 477029 | d65f9a2a82aa0a8fe175a7e71009560c20174b6f9a021ce42e2503e8e5b87d23 | `large-json/index/csi_H30535-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-25 |
 | index/csi_H30590-all.json | 493388 | 8a7b4102301d3bb51e17a370a0fddec6b9eb6c950a1b22f8ac37e8163f79aa4f | `large-json/index/csi_H30590-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-25 |
