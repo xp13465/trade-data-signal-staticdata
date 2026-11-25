@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "generated_at": "2026-11-24T22:55:00+08:00",
+ "generated_at": "2026-11-25T22:55:00+08:00",
  "source": {
   "db": "sim_trade.db",
   "db_exists": true,
@@ -8,6 +8,25 @@
   "note": null
  },
  "positions": [
+  {
+   "etf_code": "501019",
+   "etf_name": "军工基金LOF",
+   "signal_date": "20261124",
+   "exec_date": "20261125",
+   "sell_due_date": "20261208",
+   "amount": 10000.0,
+   "buy_date": "20261125",
+   "buy_price": 1.016,
+   "shares": 9800.0,
+   "buy_cost": 10000.0,
+   "latest_price": 1.004,
+   "latest_date": "20261125",
+   "market_value": 9839.2,
+   "profit": -118.1,
+   "profit_pct": -1.18,
+   "price_source": "etf_daily",
+   "mark_profit": null
+  },
   {
    "etf_code": "159213",
    "etf_name": "机器人ETF汇添富",
@@ -19,16 +38,34 @@
    "buy_price": 1.01,
    "shares": 9900.0,
    "buy_cost": 10000.0,
-   "latest_price": 0.987,
-   "latest_date": "20261124",
-   "market_value": 9771.3,
-   "profit": -228.2,
-   "profit_pct": -2.28,
+   "latest_price": 0.936,
+   "latest_date": "20261125",
+   "market_value": 9266.4,
+   "profit": -733.1,
+   "profit_pct": -7.33,
    "price_source": "etf_daily",
    "mark_profit": null
   }
  ],
  "trades": [
+  {
+   "fill_id": "f1ecd37731e344e797a5354656beae85",
+   "side": "buy",
+   "fill_date": "20261125",
+   "price_kind": "open",
+   "price": 1.016,
+   "shares": 9800.0,
+   "status": "confirmed",
+   "source": "etf_daily",
+   "fee": -0.4978,
+   "slippage_est": 9.9568,
+   "slippage_rate": 0.001,
+   "etf_code": "501019",
+   "etf_name": "军工基金LOF",
+   "signal_date": "20261124",
+   "sell_due_date": "20261208",
+   "created_at": "2026-11-25T22:50:00+08:00"
+  },
   {
    "fill_id": "9d19bb1162fa02435efe6e7772e91f8f",
    "side": "buy",
@@ -49,8 +86,8 @@
   }
  ],
  "trade_meta": {
-  "shown": 1,
-  "total": 1,
+  "shown": 2,
+  "total": 2,
   "limit": 200
  },
  "summary": {
@@ -59,8 +96,8 @@
    "capital_from": "signal",
    "include_marks": false,
    "n": 0,
-   "n_total_signals": 2,
-   "n_open": 2,
+   "n_total_signals": 3,
+   "n_open": 3,
    "marks": 0,
    "win_rate": 0.0,
    "avg_win": 0.0,
@@ -74,6 +111,19 @@
    "span_days": 0,
    "recent_50": [
     {
+     "signal_date": "20261125",
+     "exec_date": "20261126",
+     "etf_code": "161032",
+     "etf_name": "煤炭龙头LOF",
+     "closed": false,
+     "profit_calc": null,
+     "profit_real": null,
+     "buy_price_raw": null,
+     "sell_price_raw": null,
+     "sell_kind": null,
+     "source": "log"
+    },
+    {
      "signal_date": "20261124",
      "exec_date": "20261125",
      "etf_code": "501019",
@@ -81,7 +131,7 @@
      "closed": false,
      "profit_calc": null,
      "profit_real": null,
-     "buy_price_raw": null,
+     "buy_price_raw": 1.016,
      "sell_price_raw": null,
      "sell_kind": null,
      "source": "log"
@@ -93,8 +143,8 @@
    "capital_from": "signal",
    "include_marks": false,
    "n": 0,
-   "n_total_signals": 2,
-   "n_open": 2,
+   "n_total_signals": 3,
+   "n_open": 3,
    "marks": 0,
    "win_rate": 0.0,
    "avg_win": 0.0,
@@ -108,10 +158,10 @@
    "span_days": 0,
    "recent_50": [
     {
-     "signal_date": "20261124",
-     "exec_date": "20261125",
-     "etf_code": "501019",
-     "etf_name": "军工基金LOF",
+     "signal_date": "20261125",
+     "exec_date": "20261126",
+     "etf_code": "161032",
+     "etf_name": "煤炭龙头LOF",
      "closed": false,
      "profit_calc": null,
      "profit_real": null,
@@ -119,13 +169,26 @@
      "sell_price_raw": null,
      "sell_kind": null,
      "source": "log"
+    },
+    {
+     "signal_date": "20261124",
+     "exec_date": "20261125",
+     "etf_code": "501019",
+     "etf_name": "军工基金LOF",
+     "closed": false,
+     "profit_calc": null,
+     "profit_real": null,
+     "buy_price_raw": 1.016,
+     "sell_price_raw": null,
+     "sell_kind": null,
+     "source": "log"
     }
    ]
   },
   "counts": {
-   "signals": 2,
+   "signals": 3,
    "closed": 0,
-   "open": 1,
+   "open": 2,
    "no_fill": 1
   }
  },
@@ -134,6 +197,82 @@
   "reason": "未配置回填对照库(--backfill-db)"
  },
  "runs": [
+  {
+   "date": "20261125",
+   "stages": [
+    {
+     "stage": "signal",
+     "ran": true,
+     "inserted": 1,
+     "ignored": 0,
+     "stats": {
+      "date": "20261125",
+      "ignored": 0,
+      "inserted": 1,
+      "rows": 1,
+      "skipped": 0,
+      "stage": "signal",
+      "superseded": 0
+     },
+     "source": "event",
+     "at": "2026-11-25T22:45:00+08:00"
+    },
+    {
+     "stage": "buy_fill",
+     "ran": true,
+     "inserted": 1,
+     "ignored": null,
+     "stats": {
+      "confirmed_existing": 0,
+      "date": "20261125",
+      "fill_failed": 1,
+      "fills": 0,
+      "orders": 1,
+      "signals": 1,
+      "skipped": 0,
+      "stage": "buy_fill",
+      "superseded": 0
+     },
+     "source": "event",
+     "at": "2026-11-25T09:50:00+08:00"
+    },
+    {
+     "stage": "sell_order",
+     "ran": true,
+     "inserted": null,
+     "ignored": null,
+     "stats": {
+      "date": "20261125",
+      "fills": 0,
+      "no_price": 0,
+      "orders": 0,
+      "positions": 0,
+      "skipped": 0,
+      "stage": "sell_order"
+     },
+     "source": "event",
+     "at": "2026-11-25T14:55:00+08:00"
+    },
+    {
+     "stage": "settle",
+     "ran": true,
+     "inserted": null,
+     "ignored": null,
+     "stats": {
+      "buy_backfill_failed": 0,
+      "buy_backfilled": 1,
+      "buy_confirmed": 0,
+      "date": "20261125",
+      "no_bar": 0,
+      "sell_settled": 0,
+      "skipped": 0,
+      "stage": "settle"
+     },
+     "source": "event",
+     "at": "2026-11-25T22:50:00+08:00"
+    }
+   ]
+  },
   {
    "date": "20261124",
    "stages": [
