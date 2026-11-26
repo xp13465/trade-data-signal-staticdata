@@ -3730,7 +3730,7 @@ staticdata 备份仓库 7 个 >20MB JSON(共 ~319MB)已移出 git 跟踪(备份�
 | index/thsc_309113-all.json | 119299 | 7b0b1b90ed65b76ab25850637ae40ffaf9736caac5f100c44f09944346df130e | `large-json/index/thsc_309113-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-27 |
 | index/thsc_309115-all.json | 120504 | 321741317061151f60585a201b0358905dfd0e3fbbbb38e8dcdcd359df4748d2 | `large-json/index/thsc_309115-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-27 |
 | index/thsc_309119-all.json | 116741 | 2c47fa5b6913629f5afda42a555c8340b6f8513db9180971bc336c667cc6aa92 | `large-json/index/thsc_309119-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-27 |
-| index/thsc_309128-all.json | 107139 | c2527f07990b4d51fbc592c5a07501915d7a8945b68fb7d7e28a5d61e2f9b719 | `large-json/index/thsc_309128-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-27 |
+| index/thsc_309128-all.json | 107139 | 27de88cee87f92a404e325b4488df4724593ace68fad478611fa675630a43ade | `large-json/index/thsc_309128-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-27 |
 | index/us_dji-all.json | 743115 | 5d86715949eb59b081f18b0c7bd2815a56df0100288694d48f2fd0d69d40efbe | `large-json/index/us_dji-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-27 |
 | index/us_ixic-all.json | 742694 | 2664b5f79ab7e7dd7cfa72f6cd4d82afd7d74b403eb2a32c6f1bd67389404dc7 | `large-json/index/us_ixic-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-27 |
 | index/us_ndx-all.json | 553579 | 0610166ca84ca12b11694335241f8ff41ee6e01a65c4180e1b0efaafd5de8be0 | `large-json/index/us_ndx-all.json.gz` | 永久(唯一副本, 不滚动删) | 2026-11-27 |
